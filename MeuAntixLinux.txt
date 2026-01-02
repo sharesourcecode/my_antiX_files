@@ -1,0 +1,258 @@
+System:
+  Kernel: 5.10.240-antix.1-amd64-smp arch: x86_64 bits: 64 compiler: gcc
+    v: 14.3.0 clocksource: tsc avail: hpet,acpi_pm
+    parameters: BOOT_IMAGE=/vmlinuz-5.10.240-antix.1-amd64-smp
+    root=/dev/mapper/vg_linux-lv_root_d1 ro vga=791 quiet selinux=0
+    resume=UUID=9b569b7d-d7c5-48ea-b86c-db101d8142e4 resume_offset=989184
+    init=/lib/runit/runit-init
+  Desktop: JWM v: 2.4.6 tools: avail: slock,xlock dm: slimski v: 1.5.0
+    Distro: antiX-25-b2_x64-full Stephen Kapos 17 December 2025 base: Debian
+    GNU/Linux 13 (trixie)
+Machine:
+  Type: Desktop System: Dell product: Vostro A180 v: N/A serial: <filter>
+    Chassis: type: 3 serial: <filter>
+  Mobo: Dell model: 0H086H v: A00 serial: <filter>
+    uuid: 44454c4c-3900-1033-804c-c4c04f594831 BIOS: Dell v: 1.0.0
+    date: 07/17/2008
+Battery:
+  Message: No system battery data found. Is one present?
+Memory:
+  System RAM: total: 4 GiB available: 3.14 GiB used: 943.4 MiB (29.3%)
+    igpu: 8 MiB
+  Array-1: capacity: 4 GiB note: est. slots: 2 modules: 2 EC: 8-bit Parity
+    max-module-size: 2 GiB
+  Device-1: DIMM1 info: double-bank type: DDR2 detail: synchronous
+    size: 2 GiB speed: 667 MT/s volts: N/A width (bits): data: 64 total: 64
+    manufacturer: 7F7F7F7F7FD60000 part-no: AU2G732-800P005 serial: <filter>
+  Device-2: DIMM2 info: double-bank type: DDR2 detail: synchronous
+    size: 2 GiB speed: 667 MT/s volts: N/A width (bits): data: 64 total: 64
+    manufacturer: Adffffffffffffff part-no: OP:69500 03/13 LI.
+    serial: <filter>
+PCI Slots:
+  Slot: 1 type: PCIe status: available length: long volts: 5.0 bus-ID: N/A
+  Slot: 4 type: PCIe status: available length: long volts: 5.0 bus-ID: N/A
+  Slot: 2 type: PCI status: available length: long volts: 5.0 bus-ID: N/A
+  Slot: 3 type: PCI status: available length: long volts: 5.0 bus-ID: N/A
+CPU:
+  Info: model: Intel Pentium Dual E2200 socket: 775 bits: 64 arch: Core2 Merom
+    level: v1 built: 2006-09 process: Intel 65nm family: 6 model-id: 0xF (15)
+    stepping: 0xD (13) microcode: 0xA4
+  Topology: cpus: 1x dies: 1 cores: 1 smt: <unsupported> cache: L1: 64 KiB
+    desc: d-1x32 KiB; i-1x32 KiB L2: 1024 KiB desc: 1x1024 KiB
+  Speed (MHz): 1200 min/max: 1200/2200 base/boost: 2200/4000 scaling:
+    driver: acpi-cpufreq governor: schedutil volts: 1.2 V ext-clock: 200 MHz
+    core: 1: 1200 bogomips: 4388
+  Flags: acpi aperfmperf apic arch_perfmon bts clflush cmov constant_tsc
+    cpuid cx16 cx8 de ds_cpl dtes64 dtherm dts est fpu fxsr lahf_lm lm mca
+    mce mmx monitor msr mtrr nopl nx pae pat pbe pdcm pebs pge pni pse pse36
+    pti rep_good sep sse sse2 ssse3 syscall tm tm2 tsc vme xtpr
+  Vulnerabilities:
+  Type: gather_data_sampling status: Not affected
+  Type: indirect_target_selection status: Not affected
+  Type: itlb_multihit status: KVM: VMX unsupported
+  Type: l1tf mitigation: PTE Inversion
+  Type: mds status: Vulnerable: Clear CPU buffers attempted, no microcode;
+    SMT disabled
+  Type: meltdown mitigation: PTI
+  Type: mmio_stale_data status: Unknown: No mitigations
+  Type: reg_file_data_sampling status: Not affected
+  Type: retbleed status: Not affected
+  Type: spec_rstack_overflow status: Not affected
+  Type: spec_store_bypass status: Vulnerable
+  Type: spectre_v1 mitigation: usercopy/swapgs barriers and __user pointer
+    sanitization
+  Type: spectre_v2 mitigation: Retpolines, STIBP: disabled, RSB filling,
+    PBRSB-eIBRS: Not affected
+  Type: srbds status: Not affected
+  Type: tsa status: Not affected
+  Type: tsx_async_abort status: Not affected
+Graphics:
+  Device-1: Intel 82G33/G31 Express Integrated Graphics vendor: Dell
+    driver: i915 v: kernel arch: Gen-4 process: Intel 65n built: 2006-07 ports:
+    active: VGA-1 empty: none bus-ID: 00:02.0 chip-ID: 8086:29c2
+    class-ID: 0300
+  Display: server: X.Org v: 21.1.16 driver: X: loaded: intel dri: swrast
+    gpu: i915 display-ID: :0.0 screens: 1
+  Screen-1: 0 s-res: 1024x768 s-dpi: 96 s-size: 270x203mm (10.63x7.99")
+    s-diag: 338mm (13.3")
+  Monitor-1: VGA-1 mapped: VGA1 model: AOC LM522 serial: <filter>
+    built: 2008 res: mode: 1024x768 hz: 60 scale: 100% (1) dpi: 86 gamma: 1.3
+    chroma: red: x: 0.643 y: 0.345 green: x: 0.302 y: 0.565 blue: x: 0.141
+    y: 0.082 white: x: 0.310 y: 0.318 size: 304x228mm (11.97x8.98")
+    diag: 380mm (15") ratio: 4:3 modes: 1024x768, 832x624, 800x600, 640x480,
+    720x400
+  API: EGL v: 1.5 hw: drv: intel i915 platforms: device: 0 egl: 1.4
+    drv: i915 device: 1 drv: swrast gbm: egl: 1.4 drv: i915 surfaceless:
+    egl: 1.4 drv: i915 x11: drv: swrast inactive: wayland
+  API: OpenGL v: 4.5 compat-v: 2.1 vendor: mesa v: 25.0.7-2 glx-v: 1.4
+    direct-render: yes renderer: llvmpipe (LLVM 19.1.7 128 bits)
+    device-ID: ffffffff:ffffffff memory: 3.07 GiB unified: yes
+  Info: Tools: api: eglinfo,glxinfo x11: xdriinfo, xdpyinfo, xprop, xrandr
+Audio:
+  Device-1: Intel NM10/ICH7 Family High Definition Audio vendor: Dell
+    driver: snd_hda_intel v: kernel bus-ID: 00:1b.0 chip-ID: 8086:27d8
+    class-ID: 0403
+  API: ALSA v: k5.10.240-antix.1-amd64-smp status: kernel-api with: apulse
+    type: pulse-emulator tools: alsactl,alsamixer,amixer
+  Server-1: PipeWire v: 1.4.2 status: n/a (root, process) with:
+    1: pipewire-pulse status: active 2: wireplumber status: active
+    3: pipewire-alsa type: plugin 4: pw-jack type: plugin
+    tools: pw-cat,pw-cli,wpctl
+Network:
+  Device-1: Realtek RTL810xE PCI Express Fast Ethernet vendor: Dell
+    driver: r8169 v: kernel pcie: gen: 1 speed: 2.5 GT/s lanes: 1 port: ce00
+    bus-ID: 03:00.0 chip-ID: 10ec:8136 class-ID: 0200
+  IF: eth0 state: down mac: <filter>
+  IF-ID-1: usb0 state: unknown speed: N/A duplex: N/A mac: <filter>
+  IP v4: <filter> scope: global broadcast: <filter>
+  IP v4: <filter> type: secondary dynamic noprefixroute scope: global
+    broadcast: <filter>
+  IP v6: <filter> scope: link
+  Info: services: wpa_supplicant
+  WAN IP: <filter>
+Bluetooth:
+  Device-1: HTC (High Tech ) MT65xx Android Phone driver: rndis_host v: kernel
+    type: USB rev: 2.0 speed: 480 Mb/s lanes: 1 mode: 2.0 bus-ID: 1-7:4
+    chip-ID: 0bb4:0003 class-ID: 0a00 serial: <filter>
+Logical:
+  Device-1: VG: vg_linux type: LVM2 size: 315.25 GiB free: 0 KiB
+  LV-1: lv_data maj-min: 253:7 type: linear dm: dm-7 size: 39.25 GiB
+  Components:
+  c-1: dm-0 maj-min: 253:0 mapped: cryptlvm size: 315.26 GiB
+  pp-1: sda5 maj-min: 8:5 size: 315.27 GiB
+  LV-2: lv_home maj-min: 253:5 type: linear dm: dm-5 size: 150 GiB
+  Components:
+  c-1: dm-0 maj-min: 253:0 mapped: cryptlvm size: 315.26 GiB
+  pp-1: sda5 maj-min: 8:5 size: 315.27 GiB
+  LV-3: lv_root_d1 maj-min: 253:1 type: linear dm: dm-1 size: 30 GiB
+  Components:
+  c-1: dm-0 maj-min: 253:0 mapped: cryptlvm size: 315.26 GiB
+  pp-1: sda5 maj-min: 8:5 size: 315.27 GiB
+  LV-4: lv_root_d2 maj-min: 253:2 type: linear dm: dm-2 size: 30 GiB
+  Components:
+  c-1: dm-0 maj-min: 253:0 mapped: cryptlvm size: 315.26 GiB
+  pp-1: sda5 maj-min: 8:5 size: 315.27 GiB
+  LV-5: lv_root_d3 maj-min: 253:3 type: linear dm: dm-3 size: 30 GiB
+  Components:
+  c-1: dm-0 maj-min: 253:0 mapped: cryptlvm size: 315.26 GiB
+  pp-1: sda5 maj-min: 8:5 size: 315.27 GiB
+  LV-6: lv_root_d4 maj-min: 253:4 type: linear dm: dm-4 size: 30 GiB
+  Components:
+  c-1: dm-0 maj-min: 253:0 mapped: cryptlvm size: 315.26 GiB
+  pp-1: sda5 maj-min: 8:5 size: 315.27 GiB
+  LV-7: lv_swap maj-min: 253:6 type: linear dm: dm-6 size: 6 GiB
+  Components:
+  c-1: dm-0 maj-min: 253:0 mapped: cryptlvm size: 315.26 GiB
+  pp-1: sda5 maj-min: 8:5 size: 315.27 GiB
+  Device-2: cryptlvm maj-min: 253:0 type: LUKS dm: dm-0 size: 315.26 GiB
+  Components:
+  p-1: sda5 maj-min: 8:5 size: 315.27 GiB
+RAID:
+  Message: No RAID data found.
+Drives:
+  Local Storage: total: 465.76 GiB used: 12.38 GiB (2.7%)
+  ID-1: /dev/sda maj-min: 8:0 vendor: Seagate model: ST500DM002-1BD142
+    family: Barracuda 7200.14 (AF) size: 465.76 GiB block-size: physical: 4096 B
+    logical: 512 B sata: 3.0 speed: <unknown> tech: HDD rpm: 7200
+    serial: <filter> fw-rev: KC45 temp: 41 C scheme: MBR
+  SMART: yes state: enabled health: PASSED on: 169d 16h cycles: 3354
+    read: 1.4 TiB written: 82.97 GiB Pre-Fail: attribute: Spin_Retry_Count
+    value: 100 worst: 100 threshold: 97
+  Optical-1: /dev/sr0 vendor: TSSTcorp model: DVD+-RW TS-H653F rev: D200
+    dev-links: cdrom,cdrw,dvd,dvdrw
+  Features: speed: 48 multisession: yes audio: yes dvd: yes
+    rw: cd-r,cd-rw,dvd-r,dvd-ram state: running
+Partition:
+  ID-1: / raw-size: 30 GiB size: 29.36 GiB (97.87%) used: 12.15 GiB (41.4%)
+    fs: ext4 block-size: 4096 B dev: /dev/dm-1 maj-min: 253:1
+    mapped: vg_linux-lv_root_d1 label: N/A uuid: N/A
+  ID-2: /boot raw-size: 500 MiB size: 458.3 MiB (91.67%)
+    used: 58.7 MiB (12.8%) fs: ext4 block-size: 1024 B dev: /dev/sda2
+    maj-min: 8:2 label: boot uuid: acd58b9e-87b0-4ce7-927a-1b5cd596a5a7
+  ID-3: /home raw-size: 150 GiB size: 146.59 GiB (97.72%)
+    used: 184.4 MiB (0.1%) fs: ext4 block-size: 4096 B dev: /dev/dm-5
+    maj-min: 253:5 mapped: vg_linux-lv_home label: N/A uuid: N/A
+Swap:
+  Kernel: swappiness: 10 (default 60) cache-pressure: 50 (default 100)
+    zswap: no
+  ID-1: swap-1 type: partition size: 6 GiB used: 0 KiB (0.0%) priority: -2
+    dev: /dev/dm-6 maj-min: 253:6 mapped: vg_linux-lv_swap label: swap
+    uuid: be0c14ab-a494-4c8d-8154-4e79e7d66e48
+  ID-2: swap-2 type: file size: 5.14 GiB used: 0 KiB (0.0%) priority: -3
+    file: /swap/swap
+Unmounted:
+  ID-1: /dev/dm-2 maj-min: 253:2 mapped: vg_linux-lv_root_d2 size: 30 GiB
+    fs: ext4 label: root_d2 uuid: f322d22a-5456-4c6e-b12f-fbf646de63dc
+  ID-2: /dev/dm-3 maj-min: 253:3 mapped: vg_linux-lv_root_d3 size: 30 GiB
+    fs: ext4 label: root_d3 uuid: 592621af-14c4-44e1-b97f-e2357210d55c
+  ID-3: /dev/dm-4 maj-min: 253:4 mapped: vg_linux-lv_root_d4 size: 30 GiB
+    fs: ext4 label: root_d4 uuid: 8b70635f-d3be-4178-9d88-8b677e199fc8
+  ID-4: /dev/dm-7 maj-min: 253:7 mapped: vg_linux-lv_data size: 39.25 GiB
+    fs: ext4 label: data uuid: 145614cd-4336-482b-b10c-9a576dee398d
+  ID-5: /dev/sda1 maj-min: 8:1 size: 150 GiB fs: ntfs label: Windows
+    uuid: 0071A9073FB2631D
+  ID-6: /dev/sda3 maj-min: 8:3 size: 1 KiB fs: N/A label: N/A uuid: N/A
+USB:
+  Hub-1: 1-0:1 info: full speed or root hub ports: 8 rev: 2.0
+    speed: 480 Mb/s (57.2 MiB/s) lanes: 1 mode: 2.0 chip-ID: 1d6b:0002
+    class-ID: 0900
+  Device-1: 1-7:4 info: HTC (High Tech ) MT65xx Android Phone
+    type: bluetooth,CDC-data driver: rndis_host interfaces: 2 rev: 2.0
+    speed: 480 Mb/s (57.2 MiB/s) lanes: 1 mode: 2.0 power: 500mA
+    chip-ID: 0bb4:0003 class-ID: 0a00 serial: <filter>
+  Hub-2: 2-0:1 info: full speed or root hub ports: 2 rev: 1.1
+    speed: 12 Mb/s (1.4 MiB/s) lanes: 1 mode: 1.1 chip-ID: 1d6b:0001
+    class-ID: 0900
+  Device-1: 2-1:2 info: Dell Keyboard SK-8115 type: keyboard
+    driver: hid-generic,usbhid interfaces: 1 rev: 1.1
+    speed: 1.5 Mb/s (183 KiB/s) lanes: 1 mode: 1.0 power: 70mA
+    chip-ID: 413c:2003 class-ID: 0301
+  Hub-3: 3-0:1 info: full speed or root hub ports: 2 rev: 1.1
+    speed: 12 Mb/s (1.4 MiB/s) lanes: 1 mode: 1.1 chip-ID: 1d6b:0001
+    class-ID: 0900
+  Device-1: 3-2:2 info: Pixart Imaging Optical Mouse type: mouse
+    driver: hid-generic,usbhid interfaces: 1 rev: 1.1
+    speed: 1.5 Mb/s (183 KiB/s) lanes: 1 mode: 1.0 power: 100mA
+    chip-ID: 093a:2510 class-ID: 0301
+  Hub-4: 4-0:1 info: full speed or root hub ports: 2 rev: 1.1
+    speed: 12 Mb/s (1.4 MiB/s) lanes: 1 mode: 1.1 chip-ID: 1d6b:0001
+    class-ID: 0900
+  Hub-5: 5-0:1 info: full speed or root hub ports: 2 rev: 1.1
+    speed: 12 Mb/s (1.4 MiB/s) lanes: 1 mode: 1.1 chip-ID: 1d6b:0001
+    class-ID: 0900
+Sensors:
+  System Temperatures: cpu: 65.0 C mobo: N/A
+  Fan Speeds (rpm): N/A
+Repos:
+  Packages: pm: dpkg pkgs: 2014 libs: 973 tools: apt,apt-get,aptitude,synaptic
+  Active apt repos in: /etc/apt/sources.list.d/antix.list
+    1: deb [signed-by=/etc/apt/keyrings/antix-archive-keyring.gpg] http://sft.if.usp.br/mx-workspace/antix/trixie trixie main nonfree nosystemd
+  Active apt repos in: /etc/apt/sources.list.d/debian-stable-updates.list
+    1: deb http://mirrors.ic.unicamp.br/debian/ trixie-updates main contrib non-free non-free-firmware
+  Active apt repos in: /etc/apt/sources.list.d/debian.list
+    1: deb http://mirrors.ic.unicamp.br/debian/ trixie main contrib non-free non-free-firmware
+    2: deb http://security.debian.org/ trixie-security main contrib non-free non-free-firmware
+  No active apt repos in: /etc/apt/sources.list.d/librewolf.list
+  No active apt repos in: /etc/apt/sources.list.d/liquorix.list
+  Active apt repos in: /etc/apt/sources.list.d/trixie-backports.list
+    1: deb http://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware
+Processes:
+  CPU top: 5 of 152
+  1: cpu: 18.8% command: firefox-esr pid: 19628 mem: 390.0 MiB (12.1%)
+  2: cpu: 13.6% command: firefox-esr pid: 19915 mem: 218.7 MiB (6.7%)
+  3: cpu: 4.3% command: firefox-esr pid: 19757 mem: 143.5 MiB (4.4%)
+  4: cpu: 2.0% command: Xorg pid: 1379 mem: 72.1 MiB (2.2%)
+  5: cpu: 0.8% command: sakura pid: 20670 mem: 42.0 MiB (1.3%)
+  Memory top: 5 of 152
+  1: mem: 390.0 MiB (12.1%) command: firefox-esr pid: 19628 cpu: 18.8%
+  2: mem: 218.7 MiB (6.7%) command: firefox-esr pid: 19915 cpu: 13.6%
+  3: mem: 143.5 MiB (4.4%) command: firefox-esr pid: 19757 cpu: 4.3%
+  4: mem: 83.3 MiB (2.5%) command: firefox-esr pid: 19695 cpu: 0.1%
+  5: mem: 76.6 MiB (2.3%) command: firefox-esr pid: 20074 cpu: 0.1%
+Info:
+  Processes: 152 Power: uptime: 49m states: freeze,mem,disk suspend: deep
+    avail: s2idle wakeups: 0 hibernate: platform avail: shutdown, reboot,
+    suspend, test_resume image: 1.25 GiB Init: runit v: N/A runlevel: 2
+    default: 2 tool: service
+  Compilers: gcc: 14.2.0 Shell: Sudo (sudo) v: 1.9.16p2 default: Bash
+    v: 5.2.37 running-in: sakura inxi: 3.3.39

@@ -1,0 +1,11 @@
+1. Corrigir a Aceleração de Hardware (Gráficos)
+
+Seu sistema indica renderer: llvmpipe (LLVM 19.1.7 128 bits). Isso causa lentidão extrema na interface.
+
+    Instale os drivers Intel e firmware:
+    Bash
+
+sudo apt update
+sudo apt install xserver-xorg-video-intel intel-media-va-driver-non-free firmware-misc-nonfree
+
+Forçar o driver i915: Verifique se o driver i915 está carregado. Se as travadas continuarem, pode ser necessário desativar a aceleração UXA em favor da SNA criando um arquivo em /etc/X11/xorg.conf.d/20-intel.conf.
