@@ -1,0 +1,7 @@
+2026-01-02 10:15:25.906 DBG default: live-usb-maker-gui-antix Versão: 24.06.20
+2026-01-02 10:15:26.401 DBG default: LUM is: "/usr/local/bin/live-usb-maker"
+2026-01-02 10:16:24.848 DBG default: Options:  "-N"
+2026-01-02 10:16:27.246 DBG default: ""
+2026-01-02 10:16:27.255 DBG default: dd bs=1M if="/home/cabana/Downloads/antiX-23.2-runit_x64-full.iso" of=/dev/sdb
+2026-01-02 10:22:01.287 DBG default: lumlog "/tmp/live-usb-maker.log"
+2026-01-02 10:22:01.287 DBG default: tac /var/log/live-usb-maker.log | sed '/^={60}=$/q' | tac > /tmp/live-usb-maker.log
