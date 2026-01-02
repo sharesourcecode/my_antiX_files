@@ -1,0 +1,196 @@
+<JWM>
+<Menu label="antiX" icon="/usr/share/icons/kora/apps/scalable/distributor-logo-antix.png" >
+<Program label="Acessar o Armazenamento em Nuvem" icon="/usr/share/icons/antix-numix-square/folder-red-meocloud.png">antix-cloud</Program>
+<Program label="Adicionar ou Remover Programas na Inicialização do antiX" icon="/usr/share/icons/Qogir-Dark/scalable/apps/cs-workspaces.png">/usr/local/bin/edit_antix_startup_file</Program>
+<Program label="Ativar ou Desativar o Servidor de Áudio PipeWire" icon="/usr/share/icons/Qogir-Dark/scalable/apps/gnome-audio.png">toggle_pipewire</Program>
+<Program label="Atualizador do antiX" icon="/usr/share/icons/Qogir-Dark/scalable/apps/software-sources.png">/usr/local/bin/yad-updater</Program>
+<Program label="Atualizador do Núcleo do Dispositivo USB Executável" icon="/usr/share/pixmaps/live-usb-kernel-updater.png">x-terminal-emulator -e sudo /usr/local/bin/live-kernel-updater --pause</Program>
+<Program label="Centro de Controle" icon="/usr/share/icons/papirus-antix/48x48/apps/control-centre-antix.png">antixcc.sh</Program>
+<Program label="Centro de Controle por Interface de Texto" icon="/usr/share/pixmaps/command-line-control-centre.png">x-terminal-emulator -f -e antiX-cli-cc</Program>
+<Program label="Conexão de Dispositivos Android via USB" icon="/usr/share/icons/Qogir-Dark/scalable/devices/smartphone.png">/usr/local/bin/android-device-usb-connect.sh</Program>
+<Program label="Configurações de Data e Hora" icon="/usr/share/icons/Qogir-Dark/scalable/apps/time.png">/usr/local/bin/set_time-and_date.sh</Program>
+<Program label="Configurações de Idioma do Usuário" icon="/usr/share/icons/Qogir-Dark/scalable/apps/preferences-desktop-locale.png">locale-antix</Program>
+<Program label="Controle de Timbres da Ambientação do Som" icon="/usr/share/icons/hicolor/scalable/apps/antiXac.svg">antiX-acoustic-colours</Program>
+<Program label="Controle do Brilho da Tela" icon="/usr/share/pixmaps/backlight-brightness.png">x-terminal-emulator -e backlight-brightness --pause</Program>
+<Program label="Criador de Dispositivo USB Executável" icon="/usr/share/pixmaps/live-usb-maker.png">su-to-root -X -c live-usb-maker-gui-antix</Program>
+<Program label="Formatador de Dispositivos USB" icon="/usr/share/pixmaps/formatusb.png">su-to-root -X -c "formatusb"</Program>
+<Program label="Gerenciador das Áreas de Trabalho Virtuais do IceWM" icon="/usr/share/icons/Qogir-Dark/scalable/apps/cs-workspaces.png">/usr/local/bin/antiX-workspace-manager</Program>
+<Program label="Gerenciador das Configurações do IceWM" icon="/usr/share/pixmaps/icewmcc.png">/usr/local/bin/icewm-manager-gui</Program>
+<Program label="Gerenciador de Dispositivos Controladores do Cursor ou da Seta" icon="/usr/share/icons/Qogir-Dark/scalable/devices/input-keyboard.png">antiX-pdm</Program>
+<Program label="Gerenciador de Ícones da Barra de Ferramentas do IceWM" icon="/usr/share/pixmaps/icewm_editor.png">/usr/local/bin/icewm-toolbar-icon-manager</Program>
+<Program label="Gerenciador de Pacotes por Interface de Texto CLI APT" icon="/usr/share/icons/Qogir-Dark/scalable/apps/system-software-install.png">x-terminal-emulator -e sudo /usr/local/bin/cli-aptiX --pause</Program>
+<Program label="Gerenciador de Usuários do antiX" icon="/usr/share/pixmaps/user-manager.png">su-to-root -X -c antix-user</Program>
+<Program label="Gerenciador do Início da Sessão" icon="/usr/share/icons/Qogir-Dark/scalable/devices/computer.png">su-to-root -X -c /usr/local/bin/login-config-antix</Program>
+<Program label="Gerenciador do Menu Pessoal do IceWM" icon="/usr/share/pixmaps/icewm_peditor.png">/usr/local/bin/icewm-quick-personal-menu-manager</Program>
+<Program label="ISO Snapshot - Criador de Imagem ISO do Sistema Operacional" icon="/usr/share/pixmaps/iso-snapshot.png">su-to-root -X -c iso-snapshot</Program>
+<Program label="Limpeza Automática do antiX" icon="/usr/share/icons/Qogir-Dark/scalable/apps/debian-logo.png">/usr/local/bin/yad-autoremove</Program>
+<Program label="Memorizador das Configurações das Janelas do IceWM" icon="/usr/share/icons/Qogir-Dark/scalable/apps/preferences-system-windows-move.png">/usr/local/bin/icewm-remember-settings</Program>
+<Program label="Menu - Adicionar um Item no Menu" icon="/usr/share/pixmaps/add-menu-item.png">add-desktop</Program>
+<Program label="Menu - Remover um Item do Menu" icon="/usr/share/pixmaps/remove-menu-item.png">remove-desktop</Program>
+<Program label="Pastas Compartilhadas na Rede" icon="/usr/share/icons/Qogir-Dark/scalable/apps/yast-samba-client.png">antix_my_network_neighborhood</Program>
+<Program label="Pesquisar Aplicativos" icon="/usr/share/icons/Qogir-Dark/scalable/apps/gnome-searchtool.png">/usr/local/bin/app-select</Program>
+<Program label="Pesquisar Arquivos, Programas e na Internet com o Finder" icon="/usr/share/icons/Qogir-Dark/scalable/apps/preferences-system-search.png">finder</Program>
+<Program label="Reparador de Sistema Operacional Chroot Rescue Scan" icon="/usr/share/pixmaps/rescuetime.png">x-terminal-emulator -e sudo chroot-rescue-scan --pause</Program>
+<Program label="Reprodutor de Canais de Televisão do antiX" icon="/usr/share/icons/hicolor/48x48/apps/aCSTV.png">aCSTV.sh</Program>
+<Program label="Reprodutor de Estações de Rádio do antiX" icon="/usr/share/icons/hicolor/48x48/apps/antiXradio.png">antiXradio</Program>
+<Program label="Selecionador de Cores Yad-Color" icon="/usr/share/icons/Qogir-Dark/scalable/apps/gcolor2.png">yad-color</Program>
+<Program label="Selecionador de Programa Gerenciador de Wi-Fi" icon="/usr/share/icons/antix-numix-square/connman.png">/usr/local/bin/antix-wifi-switch</Program>
+</Menu>
+<Separator/>
+<Menu label="Acessibilidade" icon="/usr/share/icons/Qogir-Dark/scalable/apps/preferences-desktop-accessibility.png" >
+<Program label="Lupa de Tela Magnus" icon="/usr/share/icons/Qogir-Dark/scalable/apps/zoom-best-fit.png">magnus</Program>
+<Program label="Teclado Virtual Onboard" icon="/usr/share/icons/Qogir-Dark/scalable/apps/onboard.png">onboard</Program>
+</Menu>
+<Menu label="Acessórios" icon="/usr/share/icons/Qogir-Dark/scalable/apps/applications-accessories.png" >
+<Program label="Assistente de Configurações do Firejail" icon="/usr/share/icons/antix-numix-square/firejail-ui.png">firejail-ui</Program>
+<Program label="Calculadora Galculator" icon="/usr/share/icons/Qogir-Dark/scalable/apps/galculator.png">galculator</Program>
+<Program label="Comparador de Arquivos e Pastas Meld" icon="/usr/share/icons/Qogir-Dark/scalable/apps/org.gnome.Meld.png">meld </Program>
+<Program label="Discos" icon="/usr/share/icons/Qogir-Dark/scalable/apps/org.gnome.DiskUtility.png">gnome-disks</Program>
+<Program label="Editor de Texto do Midnight Commander" icon="/usr/share/icons/Qogir-Dark/scalable/apps/MidnightCommander.png">desktop-defaults-run -t mcedit</Program>
+<Program label="Editor de Texto Leafpad" icon="/usr/share/icons/Qogir-Dark/scalable/apps/leafpad.png">leafpad </Program>
+<Program label="Editor de Texto Vim.tiny" icon="/usr/share/icons/Qogir-Dark/scalable/apps/vim.png">urxvt -e vim </Program>
+<Program label="Emulador de Terminal Rxvt Unicode" icon="/usr/share/icons/Qogir-Dark/scalable/apps/terminal.png">urxvt</Program>
+<Program label="Gerenciador da Área de Transferência ClipIt" icon="/usr/share/icons/Qogir-Dark/scalable/apps/clipit-trayicon.png">clipit</Program>
+<Program label="Gerenciador de Arquivos ROX-Filer" icon="/usr/share/pixmaps/rox-filer.png">/usr/bin/rox-filer</Program>
+<Program label="Gerenciador de Arquivos zzzFM" icon="/usr/share/pixmaps/zzzfm.png">zzzfm </Program>
+<Program label="Gerenciador de Compactação" icon="/usr/share/icons/Qogir-Dark/scalable/apps/file-roller.png">file-roller </Program>
+<Program label="Gravador de CD e DVD Xfburn" icon="/usr/share/icons/Qogir-Dark/scalable/devices/media-cdrom.png">xfburn</Program>
+<Program label="Instalador de Programas do Windows PlayOnLinux" icon="/usr/share/icons/Qogir-Dark/scalable/apps/playonlinux.png">playonlinux </Program>
+<Program label="Organizador de Notas CherryTree" icon="/usr/share/icons/Qogir-Dark/scalable/apps/cherrytree.png">cherrytree </Program>
+<Program label="Outras Áreas de Trabalho" icon="/usr/share/icons/Qogir-Dark/scalable/places/user-desktop.png">/usr/local/lib/desktop-session/desktop-session-menu-window ignore-settings</Program>
+<Program label="Pesquisar Aplicativos" icon="/usr/share/icons/Qogir-Dark/scalable/apps/gnome-searchtool.png">/usr/local/bin/app-select</Program>
+<Program label="Pesquisar Arquivos com o zzzFM" icon="/usr/share/pixmaps/zzzfm-find.png">zzzfm --find-files </Program>
+<Program label="Pesquisar Arquivos, Programas e na Internet com o Finder" icon="/usr/share/icons/Qogir-Dark/scalable/apps/preferences-system-search.png">finder</Program>
+</Menu>
+<Menu label="Desenvolvimento" icon="/usr/share/icons/Qogir-Dark/scalable/apps/applications-development.png" >
+<Program label="Editor de Texto Geany" icon="/usr/share/icons/Qogir-Dark/scalable/apps/geany.png">geany </Program>
+</Menu>
+<Menu label="Escritório" icon="/usr/share/icons/Qogir-Dark/scalable/apps/applications-office.png" >
+<Program label="LibreOffice - A Suíte de Escritório" icon="/usr/share/icons/Qogir-Dark/scalable/apps/libreoffice-startcenter.png">libreoffice </Program>
+<Program label="LibreOffice Calc - Planilha Eletrônica" icon="/usr/share/icons/Qogir-Dark/scalable/apps/libreoffice-calc.png">libreoffice --calc </Program>
+<Program label="LibreOffice Draw - Desenho Vetorial" icon="/usr/share/icons/Qogir-Dark/scalable/apps/libreoffice-draw.png">libreoffice --draw </Program>
+<Program label="LibreOffice Impress - Apresentação Gráfica" icon="/usr/share/icons/Qogir-Dark/scalable/apps/libreoffice-impress.png">libreoffice --impress </Program>
+<Program label="LibreOffice Math - Fórmula Matemática" icon="/usr/share/icons/Qogir-Dark/scalable/apps/libreoffice-math.png">libreoffice --math </Program>
+<Program label="LibreOffice Writer - Processador de Texto" icon="/usr/share/icons/Qogir-Dark/scalable/apps/libreoffice-writer.png">libreoffice --writer </Program>
+<Program label="Visualizador de documentos" icon="/usr/share/icons/Qogir-Dark/scalable/apps/org.gnome.Evince.png">evince </Program>
+</Menu>
+<Menu label="Gráficos" icon="/usr/share/icons/Qogir-Dark/scalable/apps/applications-graphics.png" >
+<Program label="Captura de Tela" icon="/usr/share/icons/Qogir-Dark/scalable/apps/gnome-screenshot.png">antixscreenshot.sh</Program>
+<Program label="Digitalizador de Documentos" icon="/usr/share/icons/Qogir-Dark/scalable/devices/scanner.png">simple-scan</Program>
+<Program label="Editor de Imagens mtPaint" icon="/usr/share/icons/Qogir-Dark/scalable/apps/mtpaint.png">mtpaint </Program>
+<Program label="ImageMagick (color depth=q16)" icon="/usr/share/icons/hicolor/48x48/apps/display-im7.q16.png">/usr/bin/display-im7.q16 -nostdin </Program>
+<Program label="LibreOffice Draw - Desenho Vetorial" icon="/usr/share/icons/Qogir-Dark/scalable/apps/libreoffice-draw.png">libreoffice --draw </Program>
+<Program label="Navegador de Câmera Digital Gtkam" icon="/usr/share/icons/Qogir-Dark/scalable/apps/gtkam-camera.png">gtkam</Program>
+<Program label="Visualizador de documentos" icon="/usr/share/icons/Qogir-Dark/scalable/apps/org.gnome.Evince.png">evince </Program>
+<Program label="Visualizador de Imagens Mirage" icon="/usr/share/pixmaps/mirage.png">mirage </Program>
+</Menu>
+<Menu label="Internet" icon="/usr/share/icons/Qogir-Dark/scalable/apps/preferences-system-network.png" >
+<Program label="Acessar o Armazenamento em Nuvem" icon="/usr/share/icons/antix-numix-square/folder-red-meocloud.png">antix-cloud</Program>
+<Program label="Cliente de Bate-Papo HexChat" icon="/usr/share/icons/Qogir-Dark/scalable/apps/io.github.Hexchat.png">hexchat --existing </Program>
+<Program label="Cliente de E-mail Claws" icon="/usr/share/icons/Qogir-Dark/scalable/apps/claws-mail.png">claws-mail </Program>
+<Program label="Cliente de Transferência de Arquivos gFTP" icon="/usr/share/icons/hicolor/48x48/apps/gftp.png">gftp-gtk </Program>
+<Program label="Compartilhamento de Arquivos Transmission" icon="/usr/share/icons/Qogir-Dark/scalable/apps/transmission.png">transmission-gtk </Program>
+<Program label="Conexão de Compartilhamentos - Ativar" icon="/usr/share/pixmaps/connectshares.png">connectshares</Program>
+<Program label="Conexão de Compartilhamentos - Desativar" icon="/usr/share/pixmaps/disconnectshares.png">disconnectshares</Program>
+<Program label="Discador de Dial-Up GNOME PPP" icon="/usr/share/icons/hicolor/48x48/apps/gnome-ppp.png">gnome-ppp</Program>
+<Program label="Interface Gráfica para o WPA" icon="/usr/share/icons/Qogir-Dark/scalable/apps/wpa_gui.png">/usr/sbin/wpa_gui</Program>
+<Program label="Navegador de Internet Firefox ESR" icon="/usr/share/icons/Qogir-Dark/scalable/apps/firefox-esr.png">/usr/lib/firefox-esr/firefox-esr </Program>
+<Program label="Navegador de Internet Links 2" icon="/usr/share/pixmaps/links2.xpm">xlinks2</Program>
+<Program label="Pastas Compartilhadas na Rede" icon="/usr/share/icons/Qogir-Dark/scalable/apps/yast-samba-client.png">antix_my_network_neighborhood</Program>
+<Program label="Pesquisar na Internet um Texto Selecionado" icon="gtk-missing-image">search-bar</Program>
+<Program label="Servidor de Arquivos Droopy" icon="/usr/share/pixmaps/droopy.png">droopy.sh</Program>
+</Menu>
+<Menu label="Jogos" icon="/usr/share/icons/Qogir-Dark/scalable/apps/applications-games.png" >
+<Program label="Emulador de Aplicativos e Jogos DOSBox" icon="/usr/share/icons/Qogir-Dark/scalable/apps/dosbox.png">dosbox</Program>
+<Program label="Jogo de Tabuleiro Mahjongg" icon="/usr/share/icons/Qogir-Dark/scalable/apps/org.gnome.Mahjongg.png">gnome-mahjongg</Program>
+</Menu>
+<Menu label="Multimídia" icon="/usr/share/icons/Qogir-Dark/scalable/apps/applications-multimedia.png" >
+<Program label="AlsaMixer - Equalizador de Áudio" icon="/usr/share/pixmaps/alsamixer-equalizer.png">urxvt -e alsamixer -D equalizer</Program>
+<Program label="AlsaMixer - Misturador de Áudio" icon="/usr/share/pixmaps/alsamixer-equalizer.png">urxvt -e alsamixer</Program>
+<Program label="Conjunto de Ferramentas e Efeitos do Calf para o JACK" icon="/usr/share/icons/hicolor/48x48/apps/calf.png">calfjackhost</Program>
+<Program label="Controle de Timbres da Ambientação do Som" icon="/usr/share/icons/hicolor/scalable/apps/antiXac.svg">antiX-acoustic-colours</Program>
+<Program label="Controle de volume" icon="/usr/share/icons/Qogir-Dark/scalable/apps/multimedia-volume-control.png">pavucontrol</Program>
+<Program label="Conversor de Multimídia WinFF" icon="/usr/share/icons/hicolor/48x48/apps/winff.png">winff </Program>
+<Program label="Equalizador de Áudio Easy Effects" icon="/usr/share/icons/Qogir-Dark/scalable/apps/com.github.wwmm.easyeffects.png">easyeffects</Program>
+<Program label="Extrator de Áudio de CD’s Asunder" icon="/usr/share/icons/Qogir-Dark/scalable/apps/asunder.png">asunder </Program>
+<Program label="Navegador de Rádios Streamtuner2" icon="/usr/share/icons/kora/apps/scalable/streamtuner2.png">streamtuner2</Program>
+<Program label="Reprodutor de Canais de Televisão do antiX" icon="/usr/share/icons/hicolor/48x48/apps/aCSTV.png">aCSTV.sh</Program>
+<Program label="Reprodutor de Estações de Rádio do antiX" icon="/usr/share/icons/hicolor/48x48/apps/antiXradio.png">antiXradio</Program>
+<Program label="Reprodutor de Multimídia Celluloid" icon="/usr/share/icons/Qogir-Dark/scalable/apps/io.github.celluloid_player.Celluloid.png">celluloid </Program>
+<Program label="Reprodutor de Multimídia mpv" icon="/usr/share/icons/Qogir-Dark/scalable/apps/mpv.png">mpv --player-operation-mode=pseudo-gui -- </Program>
+<Program label="Reprodutor de Multimídia XMMS" icon="/usr/share/icons/Qogir-Dark/scalable/apps/xmms.png">xmms</Program>
+<Program label="Reprodutor de Vídeos do YouTube por Interface de Texto" icon="/usr/share/icons/Qogir-Dark/scalable/apps/youtube.png">x-terminal-emulator -e /usr/bin/ytfzf</Program>
+<Program label="Reprodutor de Vídeos do YouTube SMTube" icon="/usr/share/icons/Qogir-Dark/scalable/apps/smtube.png">smtube</Program>
+<Program label="Visualizador e Capturador de Câmera GUVCView" icon="/usr/share/icons/Qogir-Dark/scalable/apps/guvcview.png">guvcview</Program>
+<Program label="xine" icon="/usr/share/icons/Qogir-Dark/scalable/apps/xine.png">xine </Program>
+</Menu>
+<Menu label="Preferências" icon="/usr/share/icons/Qogir-Dark/scalable/apps/preferences-desktop.png" >
+<Program label="Adicionar Atalho de Teclado" icon="/usr/share/icons/Qogir-Dark/scalable/apps/preferences-desktop-keyboard-shortcuts.png">add-key</Program>
+<Program label="AlsaMixer - Equalizador de Áudio" icon="/usr/share/pixmaps/alsamixer-equalizer.png">urxvt -e alsamixer -D equalizer</Program>
+<Program label="AlsaMixer - Misturador de Áudio" icon="/usr/share/pixmaps/alsamixer-equalizer.png">urxvt -e alsamixer</Program>
+<Program label="Ativar ou Desativar o Firewall UFW" icon="/usr/share/icons/Qogir-Dark/scalable/apps/preferences-system-firewall.png">antix_firewall_toggle</Program>
+<Program label="Ativar ou Desativar os Efeitos Visuais com o Compositor Xcompmgr" icon="/usr/share/icons/Qogir-Dark/scalable/apps/desktop-effects.png">simple_compositor_toggle</Program>
+<Program label="Ativar ou Desativar o Servidor de Áudio PipeWire" icon="/usr/share/icons/Qogir-Dark/scalable/apps/gnome-audio.png">toggle_pipewire</Program>
+<Program label="Bloqueador de Publicidade" icon="/usr/share/pixmaps/advert-block.png">su-to-root -X -c block-advert.sh</Program>
+<Program label="Conexão de Compartilhamentos - Configurar" icon="/usr/share/pixmaps/connectshares-config.png">connectshares-config</Program>
+<Program label="Configurações da Impressora" icon="/usr/share/icons/Qogir-Dark/scalable/devices/printer.png">system-config-printer</Program>
+<Program label="Configurações da Montagem Automática" icon="/usr/share/pixmaps/mountbox.png">automount-config</Program>
+<Program label="Configurações da Tela ARandR" icon="/usr/share/icons/Qogir-Dark/scalable/devices/display.png">arandr</Program>
+<Program label="Configurações de Idioma do Usuário" icon="/usr/share/icons/Qogir-Dark/scalable/apps/preferences-desktop-locale.png">locale-antix</Program>
+<Program label="Configurações do Modem ADSL PPPOE" icon="/usr/share/pixmaps/pppoeconf.png">x-terminal-emulator -e /usr/sbin/pppoeconf</Program>
+<Program label="Configurações do Qt5" icon="/usr/share/icons/Qogir-Dark/scalable/apps/qtcreator.png">qt5ct</Program>
+<Program label="Configurações do Tamanho da Fonte" icon="/usr/share/icons/Qogir-Dark/scalable/apps/fonts.png">gksu set-dpi</Program>
+<Program label="Configurações do Teclado do Sistema" icon="/usr/share/icons/system-keyboard-qt.png">su-to-root -X -c system-keyboard-qt</Program>
+<Program label="Configurações do Teclado Virtual Onboard" icon="/usr/share/icons/Qogir-Dark/scalable/apps/onboard.png">onboard-settings</Program>
+<Program label="Configurador de Alternativas" icon="/usr/share/icons/Qogir-Dark/scalable/apps/galternatives.png">gksu /usr/bin/galternatives</Program>
+<Program label="Controle de volume" icon="/usr/share/icons/Qogir-Dark/scalable/apps/multimedia-volume-control.png">pavucontrol</Program>
+<Program label="Controle do Brilho da Tela Screenlight" icon="/usr/share/pixmaps/screenlight.png">screenlight-menu.sh</Program>
+<Program label="Gerenciador das Configurações do Modem" icon="/usr/share/icons/Qogir-Dark/scalable/apps/modem-manager-gui.png">modem-manager-gui</Program>
+<Program label="Gerenciador das Configurações do Modem Sakis3G" icon="/usr/share/icons/Qogir-Dark/scalable/apps/modem-manager-gui.png">desktop-defaults-run -t sakis3g --interactive</Program>
+<Program label="Gerenciador de Bluetooth Blueman" icon="/usr/share/icons/Qogir-Dark/scalable/devices/blueman.png">blueman-manager</Program>
+<Program label="Gerenciador de Conexões de Rede Ceni" icon="/usr/share/icons/hicolor/48x48/apps/ceni.png">desktop-defaults-run -t su-to-root -c /usr/sbin/Ceni</Program>
+<Program label="Gerenciador de Conexões de Rede CMST ConnMan" icon="/usr/share/icons/Qogir-Dark/scalable/apps/preferences-system-network.png">cmst</Program>
+<Program label="Gerenciador de Dispositivos Controladores do Cursor ou da Seta" icon="/usr/share/icons/Qogir-Dark/scalable/devices/input-keyboard.png">antiX-pdm</Program>
+<Program label="Gerenciador de Serviços do dinit" icon="/usr/share/icons/Qogir/48/apps/applications-system.png">su-to-root -X -c dinit-dialogbox-manager</Program>
+<Program label="Gerenciador de Serviços do s6-rc" icon="/usr/share/icons/Qogir/48/apps/applications-system.png">su-to-root -X -c s6-rc-dialogbox-manager</Program>
+<Program label="Gerenciador do Menu" icon="/usr/share/icons/Qogir-Dark/scalable/apps/menu-editor.png">sudo menu_manager.sh</Program>
+<Program label="Menu - Adicionar um Item no Menu" icon="/usr/share/pixmaps/add-menu-item.png">add-desktop</Program>
+<Program label="Menu - Remover um Item do Menu" icon="/usr/share/pixmaps/remove-menu-item.png">remove-desktop</Program>
+<Program label="Papel de Parede ou Imagem de Fundo" icon="/usr/share/icons/Qogir-Dark/scalable/apps/preferences-desktop-wallpaper.png">/usr/local/bin/wallpaper</Program>
+<Program label="Personalizar a Aparência e o Comportamento" icon="/usr/share/icons/Qogir-Dark/scalable/apps/preferences-desktop-theme.png">lxappearance</Program>
+<Program label="Qt6 Settings" icon="/usr/share/icons/Qogir-Dark/scalable/apps/preferences-desktop-theme.png">qt6ct</Program>
+<Program label="Selecionador da Placa de Som" icon="/usr/share/icons/antix-numix-square/soundcard.png">alsa-set-default-card</Program>
+</Menu>
+<Menu label="Sistema" icon="/usr/share/icons/Qogir-Dark/scalable/apps/preferences-system.png" >
+<Program label="Assistente de Redes" icon="/usr/share/pixmaps/network-assistant.png">su-to-root -X -c network-assistant</Program>
+<Program label="Centro de Controle" icon="/usr/share/icons/papirus-antix/48x48/apps/control-centre-antix.png">antixcc.sh</Program>
+<Program label="Conexão de Dispositivos Android via USB" icon="/usr/share/icons/Qogir-Dark/scalable/devices/smartphone.png">/usr/local/bin/android-device-usb-connect.sh</Program>
+<Program label="Cópia de Segurança de Arquivos LuckyBackup" icon="/usr/share/icons/Qogir-Dark/scalable/apps/luckybackup.png">/usr/bin/luckybackup</Program>
+<Program label="Cópia de Segurança de Arquivos LuckyBackup como Superusuário" icon="/usr/share/icons/Qogir-Dark/scalable/apps/luckybackup.png">su-to-root -X -c /usr/bin/luckybackup</Program>
+<Program label="Emulador de Terminal como Root" icon="/usr/share/icons/Qogir-Dark/scalable/apps/gksu-root-terminal.png">gksu /usr/bin/x-terminal-emulator</Program>
+<Program label="Emulador de Terminal ROXTerm" icon="/usr/share/icons/Qogir-Dark/scalable/apps/roxterm.png">roxterm</Program>
+<Program label="Firetools - Interface de Segurança do Firejail" icon="/usr/share/icons/antix-numix-square/firetools.png">firetools</Program>
+<Program label="Gerenciador de Arquivos Midnight Commander" icon="/usr/share/icons/Qogir-Dark/scalable/apps/MidnightCommander.png">desktop-defaults-run -t mc</Program>
+<Program label="Gerenciador de Arquivos ROX-Filer como Root" icon="gtk-missing-image">gksu 'rox --new'</Program>
+<Program label="Gerenciador de Discos" icon="/usr/share/icons/hicolor/scalable/apps/disk-manager.svg">su-to-root -X -c disk-manager</Program>
+<Program label="Gerenciador de Pacotes por Interface de Texto CLI APT" icon="/usr/share/icons/Qogir-Dark/scalable/apps/system-software-install.png">x-terminal-emulator -e sudo /usr/local/bin/cli-aptiX --pause</Program>
+<Program label="Gerenciador de Pacotes Synaptic" icon="/usr/share/icons/Qogir-Dark/scalable/apps/synaptic.png">su-to-root -X -c /usr/sbin/synaptic</Program>
+<Program label="Gerenciador de Partições GParted" icon="/usr/share/icons/Qogir-Dark/scalable/apps/gparted.png">gksu /usr/sbin/gparted </Program>
+<Program label="Gerenciador de Repositórios" icon="/usr/share/icons/hicolor/48x48/apps/repo-manager.png">su-to-root -X -c repo-manager</Program>
+<Program label="Gerenciador de Serviços do Runit" icon="/usr/share/icons/Qogir-Dark/scalable/apps/bum.png">su-to-root -X -c runit-service-manager.sh</Program>
+<Program label="Gerenciador de Tarefas" icon="/usr/share/icons/Qogir-Dark/scalable/apps/utilities-system-monitor.png">lxtask</Program>
+<Program label="Informações do Computador" icon="/usr/share/pixmaps/info_blue.png">inxi-gui</Program>
+<Program label="Instalador de Controlador da NVIDIA" icon="/usr/share/icons/Qogir-Dark/scalable/apps/nvidia.png">x-terminal-emulator -e sudo /usr/bin/ddm-mx -i nvidia</Program>
+<Program label="Instalador de pacotes GDebi" icon="/usr/share/icons/Qogir-Dark/scalable/mimetypes/package-x-generic.png">gdebi-gtk </Program>
+<Program label="Instalador e Desinstalador de Pacotes *.deb" icon="/usr/share/icons/hicolor/48x48/apps/deb-installer.png">deb-installer </Program>
+<Program label="Instalador e Desinstalador de Programas" icon="/usr/share/pixmaps/packageinstaller.png">su-to-root -X -c packageinstaller</Program>
+<Program label="Limpeza Automática do antiX" icon="/usr/share/icons/Qogir-Dark/scalable/apps/debian-logo.png">/usr/local/bin/yad-autoremove</Program>
+<Program label="Lixeira" icon="/usr/share/icons/Qogir-Dark/scalable/places/user-trash.png">zzzfm ~/.local/share/Trash/files/</Program>
+<Program label="LXTerminal" icon="/usr/share/icons/Qogir-Dark/scalable/apps/lxterminal.png">lxterminal</Program>
+<Program label="Montador de Dispositivos" icon="/usr/share/pixmaps/mountbox.png">/usr/local/bin/mountbox.sh</Program>
+<Program label="Reparador de Inicialização" icon="/usr/share/pixmaps/bootrepair.png">su-to-root -X -c bootrepair</Program>
+<Program label="Sincronizador de Arquivos Grsync" icon="/usr/share/icons/Qogir-Dark/scalable/apps/grsync.png">/usr/bin/grsync -i </Program>
+<Program label="Verificador de Dispositivos USB F3-Qt" icon="/usr/share/icons/Qogir-Dark/scalable/apps/applications-utilities.png">f3-qt</Program>
+<Program label="Visualizador de Processos Htop" icon="/usr/share/icons/Qogir-Dark/scalable/apps/htop.png">desktop-defaults-run -t htop</Program>
+</Menu>
+</JWM>

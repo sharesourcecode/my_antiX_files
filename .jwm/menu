@@ -1,0 +1,31 @@
+<JWM>
+
+<!-- /home/cabana/.jwm/ -->
+    <Program label="Pesquisar Aplicativos" icon="/usr/share/icons/Qogir/scalable/apps/gnome-searchtool.png">/usr/local/bin/app-select</Program>
+    <Program label="Emulador de Terminal" icon="/usr/share/icons/Qogir/scalable/apps/terminal.png">desktop-defaults-run -t</Program>
+    <Program label="Gerenciador de Arquivos" icon="/usr/share/icons/Qogir/48/apps/file-manager.png">desktop-defaults-run -fm</Program>
+    <Program label="Navegador de Internet" icon="/usr/share/icons/Qogir/scalable/apps/web-browser.png">desktop-defaults-run -b</Program>
+    <Program label="Editor" icon="/usr/share/icons/Qogir/scalable/apps/leafpad.png">desktop-defaults-run -te</Program>
+    <Separator/>
+    <Menu label="Menu Pessoal" icon="/usr/share/icons/Qogir/scalable/places/user-identity.png">
+        <Include>$HOME/.jwm/personal</Include>
+    </Menu>
+    <Menu label="Aplicativos" icon="/usr/share/icons/Qogir/scalable/apps/applications-all.png">
+        <Include>$HOME/.jwm/menu-applications</Include>
+    </Menu>
+    <Program label="Recarregar o Menu" icon="/usr/share/icons/Qogir/scalable/apps/reload.png">desktop-menu --write-out-global && jwm -restart</Program>
+    <Separator/>
+    <Menu label="Área de Trabalho" icon="/usr/share/icons/Qogir/48/places/user-desktop.png">
+        <Menu label="Alternar Entre as Áreas de Trabalho" icon="/usr/share/icons/Qogir/48/places/user-desktop.png">
+            <Include>/usr/share/desktop-session/wm-menus/jwm-wm-menu</Include>
+        </Menu>
+        <Program label="Ativar ou Desativar o Painel do Rox" icon="/usr/share/icons/Qogir/48/places/folder_color_default.png">paneltoggle.sh</Program>
+        <Program label="Ativar ou Desativar o Conky" icon="/usr/share/icons/Qogir/48/places/folder_color_default.png">conkytoggle.sh</Program>
+    </Menu>
+    <Separator/>
+    <Program label="Aniquilar Aplicativo" icon="/usr/share/icons/Qogir/scalable/apps/offgame.png">xkill</Program>
+    <Program label="Centro de Controle" icon="/usr/share/icons/Qogir/scalable/apps/control-center2.png">antixcc.sh</Program>
+    <Program label="Executar" icon="/usr/share/icons/Qogir/48/apps/applications-utilities.png">gexec</Program>
+    <Separator/>
+    <Include>$HOME/.jwm/themes-list</Include>
+</JWM>
