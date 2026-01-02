@@ -1,1 +1,522 @@
-
+2026-01-02 10:53:03.824 DBG default: Installer version: 24.06.14
+2026-01-02 10:53:04.110 DBG default: << void MInstall::startup() >>
+2026-01-02 10:53:04.110 DBG default: Detect EFI: 0
+2026-01-02 10:53:04.110 DBG default: Live boot: desktheme=dark vga=791 lang=pt_BR quiet splasht disable=lxF
+2026-01-02 10:53:04.170 DBG default: Check MD5: /live/boot-dev/antiX/initrd.gz
+2026-01-02 10:53:05.480 DBG default: Check MD5: /live/boot-dev/antiX/linuxfs
+2026-01-02 10:53:15.035 DBG default: -- Check halted --
+2026-01-02 10:53:15.054 DBG default: Exec #1: du -scb /live/aufs/boot
+2026-01-02 10:53:15.076 WRN qt.qpa.xcb: QXcbConnection: XCB error: 3 (BadWindow), sequence: 1195, resource id: 18889404, major code: 40 (TranslateCoords), minor code: 0
+2026-01-02 10:53:15.077 DBG default: Exit #1: 0
+2026-01-02 10:53:15.078 DBG default: Basic image: 5085964800 true "/live/boot-dev/antiX/linuxfs.info"
+2026-01-02 10:53:15.079 DBG default: Source inodes: 177891 Assumed block size: 4096
+2026-01-02 10:53:15.079 DBG default: Minimum space: 117873723 (boot), 5814606336 (root)
+2026-01-02 10:53:15.247 DBG default: Exec #2: find -L /usr/share/zoneinfo/posix -mindepth 2 -type f -printf %P\n
+2026-01-02 10:53:15.270 DBG default: Exit #2: 0
+2026-01-02 10:53:15.274 DBG default: Bash #3: guess-hwclock
+2026-01-02 10:53:17.104 DBG default: Exit #3: 0
+2026-01-02 10:53:17.104 DBG default: Bash #4: locale -a | grep -Ev '^(C|POSIX)\.?' | grep -E 'utf8|UTF-8'
+2026-01-02 10:53:17.117 DBG default: Exit #4: 0
+2026-01-02 10:53:17.119 DBG default: Bash #5: ls -1 /home | grep -Ev '^(lost\+found|demo|snapshot)$' | grep -q '[a-zA-Z0-9]'
+2026-01-02 10:53:17.133 DBG default: Exit #5: 1
+2026-01-02 10:53:17.133 DBG default: check for possible snapshot: false
+2026-01-02 10:53:17.134 DBG default: Bash #6: dpkg -s samba | grep '^Status.*ok.*' | sed -e 's/.*ok //'
+2026-01-02 10:53:17.189 DBG default: SErr #6: "dpkg-query: package 'samba' is not installed and no information is available\nUse dpkg --info (= dpkg-deb --info) to examine archive files.\n"
+2026-01-02 10:53:17.189 DBG default: Exit #6: 0
+2026-01-02 10:53:17.192 DBG default: Exec #7: lsblk -T -bJo TYPE,NAME,PATH,UUID,ROTA,DISC-GRAN,SIZE,PHY-SEC,PTTYPE,PARTTYPENAME,FSTYPE,FSVER,LABEL,MODEL,PARTFLAGS
+2026-01-02 10:53:17.216 DBG default: Exit #7: 0
+2026-01-02 10:53:17.217 DBG default: Exec #8: parted -lm
+2026-01-02 10:53:17.509 DBG default: Exit #8: 0
+2026-01-02 10:53:17.509 DBG default: Bash #9: lsblk -T -bJo TYPE,NAME,PATH,UUID,ROTA,DISC-GRAN,SIZE,PHY-SEC,FSTYPE,LABEL /dev/mapper/*
+2026-01-02 10:53:17.527 DBG default: SErr #9: "lsblk: /dev/mapper/control: not a block device\n"
+2026-01-02 10:53:17.527 DBG default: Exit #9: 32
+2026-01-02 11:40:30.834 DBG default: Installer version: 24.06.14
+2026-01-02 11:40:30.994 DBG default: << void MInstall::startup() >>
+2026-01-02 11:40:30.995 DBG default: Detect EFI: 0
+2026-01-02 11:40:30.995 DBG default: Live boot: desktheme=dark vga=791 lang=pt_BR quiet splasht disable=lxF
+2026-01-02 11:40:31.050 DBG default: Check MD5: /live/boot-dev/antiX/initrd.gz
+2026-01-02 11:40:31.142 DBG default: Check MD5: /live/boot-dev/antiX/linuxfs
+2026-01-02 11:40:34.488 DBG default: -- Check halted --
+2026-01-02 11:40:34.507 DBG default: Exec #1: du -scb /live/aufs/boot
+2026-01-02 11:40:34.526 WRN qt.qpa.xcb: QXcbConnection: XCB error: 3 (BadWindow), sequence: 977, resource id: 18933437, major code: 40 (TranslateCoords), minor code: 0
+2026-01-02 11:40:34.528 DBG default: Exit #1: 0
+2026-01-02 11:40:34.529 DBG default: Basic image: 5085964800 true "/live/boot-dev/antiX/linuxfs.info"
+2026-01-02 11:40:34.529 DBG default: Source inodes: 177891 Assumed block size: 4096
+2026-01-02 11:40:34.529 DBG default: Minimum space: 117873723 (boot), 5814606336 (root)
+2026-01-02 11:40:34.635 DBG default: Exec #2: find -L /usr/share/zoneinfo/posix -mindepth 2 -type f -printf %P\n
+2026-01-02 11:40:34.647 DBG default: Exit #2: 0
+2026-01-02 11:40:34.649 DBG default: Bash #3: guess-hwclock
+2026-01-02 11:40:36.383 DBG default: Exit #3: 0
+2026-01-02 11:40:36.384 DBG default: Bash #4: locale -a | grep -Ev '^(C|POSIX)\.?' | grep -E 'utf8|UTF-8'
+2026-01-02 11:40:36.398 DBG default: Exit #4: 0
+2026-01-02 11:40:36.399 DBG default: Bash #5: ls -1 /home | grep -Ev '^(lost\+found|demo|snapshot)$' | grep -q '[a-zA-Z0-9]'
+2026-01-02 11:40:36.423 DBG default: Exit #5: 1
+2026-01-02 11:40:36.424 DBG default: check for possible snapshot: false
+2026-01-02 11:40:36.424 DBG default: Bash #6: dpkg -s samba | grep '^Status.*ok.*' | sed -e 's/.*ok //'
+2026-01-02 11:40:36.476 DBG default: SErr #6: "dpkg-query: package 'samba' is not installed and no information is available\nUse dpkg --info (= dpkg-deb --info) to examine archive files.\n"
+2026-01-02 11:40:36.476 DBG default: Exit #6: 0
+2026-01-02 11:40:36.477 DBG default: Exec #7: lsblk -T -bJo TYPE,NAME,PATH,UUID,ROTA,DISC-GRAN,SIZE,PHY-SEC,PTTYPE,PARTTYPENAME,FSTYPE,FSVER,LABEL,MODEL,PARTFLAGS
+2026-01-02 11:40:36.498 DBG default: Exit #7: 0
+2026-01-02 11:40:36.499 DBG default: Exec #8: parted -lm
+2026-01-02 11:40:37.301 DBG default: Exit #8: 0
+2026-01-02 11:40:37.302 DBG default: Bash #9: lsblk -T -bJo TYPE,NAME,PATH,UUID,ROTA,DISC-GRAN,SIZE,PHY-SEC,FSTYPE,LABEL /dev/mapper/*
+2026-01-02 11:40:37.323 DBG default: SErr #9: "lsblk: /dev/mapper/control: not a block device\n"
+2026-01-02 11:40:37.323 DBG default: Exit #9: 32
+2026-01-02 11:40:43.531 DBG default: Bash #10: command -v  system-keyboard-qt >/dev/null 2>&1
+2026-01-02 11:40:43.548 DBG default: Exit #10: 0
+2026-01-02 11:40:43.548 DBG default: Exec #11: system-keyboard-qt
+2026-01-02 11:40:56.704 DBG default: SErr #11: "QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'\n\"BACKSPACE\" = \"guess\"\n\"XKBLAYOUT\" = \"br,us\"\n\"XKBMODEL\" = \"pc105\"\n\"XKBOPTIONS\" = \"grp:lalt_lshift_toggle,terminate:ctrl_alt_bksp,grp_led:scroll\"\n\"XKBVARIANT\" = \"\"\n\"# KEYBOARD CONFIGURATION FILE\\n\\n# Consult the keyboard(5) manual page.\\n\\nXKBMODEL=\\\"pc105\\\"\\nXKBLAYOUT=\\\"br\\\"\\nXKBVARIANT=\\\"\\\"\\nXKBOPTIONS=\\\"grp:lalt_lshift_toggle,terminate:ctrl_alt_bksp,grp_led:scroll\\\"\\n\\nBACKSPACE=\\\"guess\\\"\\n\"\ncp /tmp/system-keyboard-qt.JjCqBW /etc/default/keyboard\nudevadm trigger -t subsystems --subsystem-match=input --action=change\n\"# KEYBOARD CONFIGURATION FILE\\n\\n# Consult the keyboard(5) manual page.\\n\\nXKBMODEL=\\\"pc105\\\"\\nXKBLAYOUT=\\\"br\\\"\\nXKBVARIANT=\\\"\\\"\\nXKBOPTIONS=\\\"grp:lalt_lshift_toggle,terminate:ctrl_alt_bksp,grp_led:scroll\\\"\\n\\nBACKSPACE=\\\"guess\\\"\\n\"\ncp /tmp/system-keyboard-qt.snMAUk /etc/default/keyboard\nudevadm trigger -t subsystems --subsystem-match=input --action=change\n"
+2026-01-02 11:40:56.704 DBG default: Exit #11: 0
+2026-01-02 11:43:45.874 DBG default: << bool Base::saveHomeBasic() >>
+2026-01-02 11:43:45.875 DBG default: Exec #12: umount -q /dev/sda6
+2026-01-02 11:43:45.903 DBG default: Exit #12: 32
+2026-01-02 11:43:45.903 DBG default: Exec #13: umount -q /mnt/antiX
+2026-01-02 11:43:45.913 DBG default: SErr #13: "umount: /mnt/antiX: no mount point specified.\n"
+2026-01-02 11:43:45.914 DBG default: Exit #13: 32
+2026-01-02 11:43:45.914 DBG default: Exec #14: mount -o ro /dev/sda6 /mnt/antiX
+2026-01-02 11:43:46.130 DBG default: Exit #14: 0
+2026-01-02 11:43:46.150 DBG default: Exec #15: umount -l /mnt/antiX
+2026-01-02 11:43:46.160 DBG default: Exit #15: 0
+2026-01-02 11:44:01.663 DBG default: ++ Preparando para instalar o antiX Linux ++
+2026-01-02 11:44:01.665 DBG default: Bash #16: echo 0 > /sys/module/zswap/parameters/enabled
+2026-01-02 11:44:01.672 DBG default: Exit #16: 0
+2026-01-02 11:44:01.673 DBG default: Exec #17: modprobe zram
+2026-01-02 11:44:01.699 DBG default: Exit #17: 0
+2026-01-02 11:44:01.699 DBG default: Exec #18: zramctl zram0 -a zstd -s 3376701440
+2026-01-02 11:44:01.726 DBG default: Exit #18: 0
+2026-01-02 11:44:01.726 DBG default: Exec #19: mkswap -q /dev/zram0
+2026-01-02 11:44:01.740 DBG default: Exit #19: 0
+2026-01-02 11:44:01.740 DBG default: Exec #20: swapon -p 32767 /dev/zram0
+2026-01-02 11:44:01.760 DBG default: Exit #20: 0
+2026-01-02 11:44:01.760 DBG default: Exec #21: smartctl -H /dev/sda
+2026-01-02 11:44:01.989 DBG default: SOut #21: "smartctl 7.3 2022-02-28 r5338 [x86_64-linux-5.10.224-antix.1-amd64-smp] (local build)\nCopyright (C) 2002-22, Bruce Allen, Christian Franke, www.smartmontools.org\n\n=== START OF READ SMART DATA SECTION ===\nSMART overall-health self-assessment test result: PASSED\n\n"
+2026-01-02 11:44:01.989 DBG default: Exit #21: 0
+2026-01-02 11:44:01.989 DBG default: Bash #22: smartctl -A /dev/sda| grep -E "^  5|^196|^197|^198" | awk '{ if ( $10 != 0 ) { print $1,$2,$10} }'
+2026-01-02 11:44:02.132 DBG default: Exit #22: 0
+2026-01-02 11:44:02.132 DBG default: << void MInstall::setupAutoMount(bool) >>
+2026-01-02 11:44:02.132 DBG default: Bash #23: ps -e | grep 'udisksd'
+2026-01-02 11:44:02.166 DBG default: SOut #23: "  23493 ?        00:00:05 udisksd\n"
+2026-01-02 11:44:02.166 DBG default: Exit #23: 0
+2026-01-02 11:44:02.166 DBG default: Bash #24: grep -El '^[^#].*mdadm (-I|--incremental)' /lib/udev/rules.d/*
+2026-01-02 11:44:02.182 DBG default: Exit #24: 0
+2026-01-02 11:44:02.183 DBG default: Exec #25: touch /run/udev/rules.d/64-md-raid-assembly.rules
+2026-01-02 11:44:02.191 DBG default: Exit #25: 0
+2026-01-02 11:44:02.191 DBG default: Bash #26: echo 'SUBSYSTEM=="block", ENV{UDISKS_IGNORE}="1"' > /run/udev/rules.d/91-mx-udisks-inhibit.rules
+2026-01-02 11:44:02.200 DBG default: Exit #26: 0
+2026-01-02 11:44:02.200 DBG default: Exec #27: udevadm control --reload
+2026-01-02 11:44:02.213 DBG default: Exit #27: 0
+2026-01-02 11:44:02.213 DBG default: Exec #28: udevadm trigger --subsystem-match=block
+2026-01-02 11:44:02.229 DBG default: Exit #28: 0
+2026-01-02 11:44:02.229 DBG default: Mount points:
+2026-01-02 11:44:02.229 DBG default:  - "/" - "sda5" "" "/dev/sda5"
+2026-01-02 11:44:02.229 DBG default:  - "/boot" - "sda2" "" "/dev/sda2"
+2026-01-02 11:44:02.229 DBG default:  - "/home" - "sda6" "" "/dev/sda6"
+2026-01-02 11:44:02.229 DBG default:  - "SWAP" - "sda3" "" "/dev/sda3"
+2026-01-02 11:44:02.229 DBG default: << void PartMan::preparePartitions() >>
+2026-01-02 11:44:02.229 DBG default: Exec #29: umount -qR /mnt/antiX
+2026-01-02 11:44:02.240 DBG default: Exit #29: 1
+2026-01-02 11:44:02.240 DBG default: Exec #30: rm -rf /mnt/antiX
+2026-01-02 11:44:02.248 DBG default: Exit #30: 0
+2026-01-02 11:44:02.249 DBG default: Exec #31: swapon --show=NAME --noheadings
+2026-01-02 11:44:02.267 DBG default: Exit #31: 0
+2026-01-02 11:44:02.267 DBG default: Exec #32: findmnt --raw -o SOURCE
+2026-01-02 11:44:02.290 DBG default: Exit #32: 0
+2026-01-02 11:44:02.290 DBG default: ++ Preparando as partições solicitadas ++
+2026-01-02 11:44:02.297 DBG default: Bash #33: sfdisk /dev/sda -q --part-type 2 83
+2026-01-02 11:44:02.689 DBG default: SErr #33: "Re-reading the partition table failed.: Device or resource busy\n"
+2026-01-02 11:44:02.689 DBG default: Exit #33: 0
+2026-01-02 11:44:02.693 DBG default: Bash #34: sfdisk /dev/sda -q --part-type 3 83
+2026-01-02 11:44:03.245 DBG default: SErr #34: "Re-reading the partition table failed.: Device or resource busy\n"
+2026-01-02 11:44:03.245 DBG default: Exit #34: 0
+2026-01-02 11:44:03.251 DBG default: Bash #35: sfdisk /dev/sda -q --part-type 5 83
+2026-01-02 11:44:03.643 DBG default: SErr #35: "Re-reading the partition table failed.: Device or resource busy\n"
+2026-01-02 11:44:03.644 DBG default: Exit #35: 0
+2026-01-02 11:44:03.653 DBG default: Bash #36: sfdisk /dev/sda -q --part-type 6 83
+2026-01-02 11:44:03.980 DBG default: SErr #36: "Re-reading the partition table failed.: Device or resource busy\n"
+2026-01-02 11:44:03.980 DBG default: Exit #36: 0
+2026-01-02 11:44:03.983 DBG default: Exec #37: parted -s /dev/sda set 2 boot on
+2026-01-02 11:44:07.004 DBG default: Exit #37: 0
+2026-01-02 11:44:07.012 DBG default: Exec #38: partx -u /dev/sda
+2026-01-02 11:44:07.057 DBG default: Exit #38: 0
+2026-01-02 11:44:07.057 DBG default: << void PartMan::formatPartitions() >>
+2026-01-02 11:44:07.057 DBG default: ++ Formatando: /boot ++
+2026-01-02 11:44:07.064 DBG default: Exec #39: mkfs.ext4 -F -c /dev/sda2 -L boot
+2026-01-02 11:44:13.027 DBG default: SOut #39: "Creating filesystem with 512000 1k blocks and 128016 inodes\nFilesystem UUID: 73cf9025-82f2-47fa-a805-2371710a777c\nSuperblock backups stored on blocks: \n\t8193, 24577, 40961, 57345, 73729, 204801, 221185, 401409\n\nAllocating group tables:  0/63\b\b\b\b\b     \b\b\b\b\bdone                            \nWriting inode tables:  0/63\b\b\b\b\b     \b\b\b\b\bdone                            \nCreating journal (8192 blocks): done\nWriting superblocks and filesystem accounting information:  0/63\b\b\b\b\b     \b\b\b\b\bdone\n\n"
+2026-01-02 11:44:13.027 DBG default: SErr #39: "mke2fs 1.47.0 (5-Feb-2023)\nChecking for bad blocks (read-only test):   0.00% done, 0:00 elapsed. (0/0/0 errors)\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b  1.99% done, 0:01 elapsed. (0/0/0 errors)\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b 10.98% done, 0:02 elapsed. (0/0/0 errors)\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b 35.45% done, 0:03 elapsed. (0/0/0 errors)\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b 60.88% done, 0:04 elapsed. (0/0/0 errors)\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b 85.61% done, 0:05 elapsed. (0/0/0 errors)\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bdone                                                 \n"
+2026-01-02 11:44:13.028 DBG default: Exit #39: 0
+2026-01-02 11:44:13.028 DBG default: Exec #40: tune2fs -c0 -C0 -i1m /dev/sda2
+2026-01-02 11:44:13.285 DBG default: SOut #40: "tune2fs 1.47.0 (5-Feb-2023)\nSetting maximal mount count to -1\nSetting current mount count to 0\nSetting interval between checks to 2592000 seconds\n"
+2026-01-02 11:44:13.285 DBG default: Exit #40: 0
+2026-01-02 11:44:13.285 DBG default: ++ Formatando: SWAP ++
+2026-01-02 11:44:13.288 DBG default: Exec #41: mkswap -q /dev/sda3 -L swapantiX
+2026-01-02 11:44:13.525 DBG default: Exit #41: 0
+2026-01-02 11:44:13.525 DBG default: ++ Formatando: / ++
+2026-01-02 11:44:13.528 DBG default: Exec #42: mkfs.ext4 -F /dev/sda5 -L rootantiX23.2
+2026-01-02 11:44:14.893 DBG default: SOut #42: "Creating filesystem with 7864320 4k blocks and 1966080 inodes\nFilesystem UUID: daa7ff2b-0269-4578-89ab-465067c4fa17\nSuperblock backups stored on blocks: \n\t32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, \n\t4096000\n\nAllocating group tables:   0/240\b\b\b\b\b\b\b       \b\b\b\b\b\b\bdone                            \nWriting inode tables:   0/240\b\b\b\b\b\b\b       \b\b\b\b\b\b\bdone                            \nCreating journal (32768 blocks): done\nWriting superblocks and filesystem accounting information:   0/240\b\b\b\b\b\b\b       \b\b\b\b\b\b\bdone\n\n"
+2026-01-02 11:44:14.893 DBG default: SErr #42: "mke2fs 1.47.0 (5-Feb-2023)\n"
+2026-01-02 11:44:14.893 DBG default: Exit #42: 0
+2026-01-02 11:44:14.893 DBG default: Exec #43: tune2fs -c0 -C0 -i1m /dev/sda5
+2026-01-02 11:44:15.090 DBG default: SOut #43: "tune2fs 1.47.0 (5-Feb-2023)\nSetting maximal mount count to -1\nSetting current mount count to 0\nSetting interval between checks to 2592000 seconds\n"
+2026-01-02 11:44:15.090 DBG default: Exit #43: 0
+2026-01-02 11:44:15.091 DBG default: << void PartMan::mountPartitions() >>
+2026-01-02 11:44:15.091 WRN default: QString::arg: Argument missing: Montagem: % 1, /
+2026-01-02 11:44:15.091 DBG default: ++ Montagem: % 1 ++
+2026-01-02 11:44:15.093 DBG default: Exec #44: mount --mkdir -o noatime,noinit_itable,async,noiversion,lazytime /dev/sda5 /mnt/antiX/
+2026-01-02 11:44:15.320 DBG default: Exit #44: 0
+2026-01-02 11:44:15.320 WRN default: QString::arg: Argument missing: Montagem: % 1, /boot
+2026-01-02 11:44:15.321 DBG default: Exec #45: mount --mkdir -o noatime,noinit_itable,async,noiversion,lazytime /dev/sda2 /mnt/antiX/boot
+2026-01-02 11:44:15.659 DBG default: Exit #45: 0
+2026-01-02 11:44:15.660 WRN default: QString::arg: Argument missing: Montagem: % 1, /home
+2026-01-02 11:44:15.660 DBG default: Exec #46: mount --mkdir -o noatime,noinit_itable,async,noiversion,lazytime /dev/sda6 /mnt/antiX/home
+2026-01-02 11:44:15.894 DBG default: Exit #46: 0
+2026-01-02 11:44:15.894 DBG default: Exec #47: lsblk --list -bJo PATH,UUID
+2026-01-02 11:44:15.925 DBG default: Exit #47: 0
+2026-01-02 11:44:15.925 DBG default: << void Base::install() >>
+2026-01-02 11:44:15.925 DBG default: << void Base::copyLinux(bool) >>
+2026-01-02 11:44:15.928 DBG default: ++ Copiando o novo sistema operacional ++
+2026-01-02 11:44:15.930 DBG default: Exec COPY: cp -av /live/aufs/boot /live/aufs/bin /live/aufs/dev /live/aufs/etc /live/aufs/lib /live/aufs/media /live/aufs/mnt /live/aufs/root /live/aufs/sbin /live/aufs/usr /live/aufs/var /live/aufs/home /live/aufs/lib64 /live/aufs/opt /mnt/antiX
+2026-01-02 11:46:49.310 DBG default: Exit COPY: 0 QProcess::NormalExit
+2026-01-02 11:46:49.311 DBG default: ++ Definir as configurações do sistema operacional. ++
+2026-01-02 11:46:49.347 DBG default: MkPath(SUCCESS): "/mnt/antiX/tmp"
+2026-01-02 11:46:49.347 DBG default: Bash #48: /usr/sbin/live-to-installed /mnt/antiX
+2026-01-02 11:46:49.717 DBG default: Exit #48: 0
+2026-01-02 11:46:49.717 DBG default: Install tabs
+2026-01-02 11:46:49.717 DBG default: Creating fstab entry for: "/" "/dev/sda5"
+2026-01-02 11:46:49.718 DBG default: Creating fstab entry for: "/boot" "/dev/sda2"
+2026-01-02 11:46:49.718 DBG default: Creating fstab entry for: "/home" "/dev/sda6"
+2026-01-02 11:46:49.718 DBG default: Creating fstab entry for: "SWAP" "/dev/sda3"
+2026-01-02 11:46:49.718 DBG default: Exec #49: mount --mkdir --rbind --make-rslave /dev /mnt/antiX/dev
+2026-01-02 11:46:49.744 DBG default: Exit #49: 0
+2026-01-02 11:46:49.745 DBG default: Exec #50: mount --mkdir --rbind --make-rslave /sys /mnt/antiX/sys
+2026-01-02 11:46:49.755 DBG default: Exit #50: 0
+2026-01-02 11:46:49.755 DBG default: Exec #51: mount --mkdir --rbind /proc /mnt/antiX/proc
+2026-01-02 11:46:49.770 DBG default: Exit #51: 0
+2026-01-02 11:46:49.770 DBG default: Exec #52: mount --mkdir -t tmpfs -o size=100m,nodev,mode=755 tmpfs /mnt/antiX/run
+2026-01-02 11:46:49.783 DBG default: Exit #52: 0
+2026-01-02 11:46:49.783 DBG default: Exec #53: mount --mkdir --rbind /run/udev /mnt/antiX/run/udev
+2026-01-02 11:46:49.792 DBG default: Exit #53: 0
+2026-01-02 11:46:49.795 DBG default: Desktop menu
+2026-01-02 11:46:49.795 DBG default: Exec #54: chroot /mnt/antiX desktop-menu --write-out-global
+2026-01-02 11:46:54.061 DBG default: SOut #54: "error: could not open display\nWriting Menu: jwm\nWriting Menu: icewm\nWriting Menu: fluxbox\n"
+2026-01-02 11:46:54.061 DBG default: SErr #54: "Authorization required, but no authorization protocol specified\n\nAuthorization required, but no authorization protocol specified\n\nAuthorization required, but no authorization protocol specified\n\n"
+2026-01-02 11:46:54.062 DBG default: Exit #54: 0
+2026-01-02 11:46:54.062 DBG default: Exec #55: rm -rf /mnt/antiX/home/demo
+2026-01-02 11:46:54.110 DBG default: Exit #55: 0
+2026-01-02 11:46:54.110 DBG default: Change root: /mnt/antiX
+2026-01-02 11:46:54.111 DBG default: Exec #56: rm /var/lib/dbus/machine-id /etc/machine-id
+2026-01-02 11:46:54.126 DBG default: SErr #56: "/usr/bin/rm: cannot remove '/etc/machine-id': No such file or directory\n"
+2026-01-02 11:46:54.126 DBG default: Exit #56: 1
+2026-01-02 11:46:54.126 DBG default: Exec #57: dbus-uuidgen --ensure=/etc/machine-id
+2026-01-02 11:46:54.185 DBG default: Exit #57: 0
+2026-01-02 11:46:54.186 DBG default: Exec #58: dbus-uuidgen --ensure
+2026-01-02 11:46:54.218 DBG default: Exit #58: 0
+2026-01-02 11:46:54.218 DBG default: Change root: 
+2026-01-02 11:46:54.219 DBG default: Bash #59: lspci -n | grep -qE '80ee:beef|80ee:cafe'
+2026-01-02 11:46:54.498 DBG default: Exit #59: 1
+2026-01-02 11:46:54.498 DBG default: Detect VirtualBox: false
+2026-01-02 11:46:54.498 DBG default: Bash #60: mv -f /mnt/antiX/etc/rc5.d/S*virtualbox-guest-utils /mnt/antiX/etc/rc5.d/K01virtualbox-guest-utils >/dev/null 2>&1
+2026-01-02 11:46:54.522 DBG default: Exit #60: 1
+2026-01-02 11:46:54.522 DBG default: Bash #61: mv -f /mnt/antiX/etc/rc4.d/S*virtualbox-guest-utils /mnt/antiX/etc/rc4.d/K01virtualbox-guest-utils >/dev/null 2>&1
+2026-01-02 11:46:54.531 DBG default: Exit #61: 1
+2026-01-02 11:46:54.531 DBG default: Bash #62: mv -f /mnt/antiX/etc/rc3.d/S*virtualbox-guest-utils /mnt/antiX/etc/rc3.d/K01virtualbox-guest-utils >/dev/null 2>&1
+2026-01-02 11:46:54.543 DBG default: Exit #62: 1
+2026-01-02 11:46:54.543 DBG default: Bash #63: mv -f /mnt/antiX/etc/rc2.d/S*virtualbox-guest-utils /mnt/antiX/etc/rc2.d/K01virtualbox-guest-utils >/dev/null 2>&1
+2026-01-02 11:46:54.556 DBG default: Exit #63: 1
+2026-01-02 11:46:54.556 DBG default: Bash #64: mv -f /mnt/antiX/etc/rcS.d/S*virtualbox-guest-x11 /mnt/antiX/etc/rcS.d/K21virtualbox-guest-x11 >/dev/null 2>&1
+2026-01-02 11:46:54.567 DBG default: Exit #64: 1
+2026-01-02 11:46:54.568 DBG default: Bash #65: make-fstab -O --install=/mnt/antiX --mntpnt=/media
+2026-01-02 11:46:55.783 DBG default: SOut #65: "  make-fstab: Remove all dynamic entries from /mnt/antiX/etc/fstab\n  make-fstab: Put 1 hard drive entry into /mnt/antiX/etc/fstab\n  make-fstab: Put 5 removable entries into /mnt/antiX/etc/fstab\n"
+2026-01-02 11:46:55.783 DBG default: Exit #65: 0
+2026-01-02 11:46:55.784 DBG default: ++ Aguardando o operador inserir as informações requeridas ++
+2026-01-02 11:51:13.826 DBG default: ++ Definir as configurações do sistema operacional ++
+2026-01-02 11:51:13.830 DBG default: Change root: /mnt/antiX
+2026-01-02 11:51:13.830 DBG default: Change root: 
+2026-01-02 11:51:13.830 DBG default: Bash #66: sed -E -i '/localhost/! s/^(127\.0\.0\.1|127\.0\.1\.1).*/\1    vostro-a180/' /mnt/antiX/etc/hosts
+2026-01-02 11:51:13.927 DBG default: Exit #66: 0
+2026-01-02 11:51:13.927 DBG default: Bash #67: sed -E -i '/localhost/! s/^(127\.0\.0\.1|127\.0\.1\.1).*/\1    vostro-a180/' /mnt/antiX/etc/hosts.ORIGINAL
+2026-01-02 11:51:13.941 DBG default: Exit #67: 0
+2026-01-02 11:51:13.941 DBG default: Bash #68: sed -E -i '/localhost/! s/^(127\.0\.0\.1|127\.0\.1\.1).*/\1    vostro-a180/' /mnt/antiX/etc/hosts.saved
+2026-01-02 11:51:13.955 DBG default: Exit #68: 0
+2026-01-02 11:51:13.955 DBG default: Bash #69: echo "vostro-a180" | cat > /mnt/antiX/etc/hostname
+2026-01-02 11:51:13.968 DBG default: Exit #69: 0
+2026-01-02 11:51:13.968 DBG default: Bash #70: echo "vostro-a180" | cat > /mnt/antiX/etc/mailname
+2026-01-02 11:51:13.978 DBG default: Exit #70: 0
+2026-01-02 11:51:13.978 DBG default: Bash #71: sed -i 's/.*send host-name.*/send host-name "vostro-a180";/g' /mnt/antiX/etc/dhcp/dhclient.conf
+2026-01-02 11:51:14.000 DBG default: Exit #71: 0
+2026-01-02 11:51:14.000 DBG default: Bash #72: echo "vostro-a180" | cat > /mnt/antiX/etc/defaultdomain
+2026-01-02 11:51:14.012 DBG default: Exit #72: 0
+2026-01-02 11:51:14.012 DBG default: << void Oobe::setLocale() >>
+2026-01-02 11:51:14.012 DBG default: Update locale
+2026-01-02 11:51:14.012 DBG default: Bash #73: chroot /mnt/antiX /usr/sbin/update-locale "LANG=pt_BR.UTF-8"
+2026-01-02 11:51:14.293 DBG default: Exit #73: 0
+2026-01-02 11:51:14.293 DBG default: Bash #74: echo a4 >/mnt/antiX/etc/papersize
+2026-01-02 11:51:14.303 DBG default: Exit #74: 0
+2026-01-02 11:51:14.303 DBG default: Exec #75: ln -nfs /usr/share/zoneinfo/America/Bahia /mnt/antiX/etc/localtime
+2026-01-02 11:51:14.316 DBG default: Exit #75: 0
+2026-01-02 11:51:14.316 DBG default: Exec #76: ln -nfs /usr/share/zoneinfo/America/Bahia /etc/localtime
+2026-01-02 11:51:14.324 DBG default: Exit #76: 0
+2026-01-02 11:51:14.325 DBG default: Bash #77: echo America/Bahia > /mnt/antiX/etc/timezone
+2026-01-02 11:51:14.339 DBG default: Exit #77: 0
+2026-01-02 11:51:14.340 DBG default: Bash #78: echo America/Bahia > /etc/timezone
+2026-01-02 11:51:14.350 DBG default: Exit #78: 0
+2026-01-02 11:51:14.350 DBG default: Bash #79: echo '0.0 0 0.0
+0
+LOCAL' > /etc/adjtime
+2026-01-02 11:51:14.360 DBG default: Exit #79: 0
+2026-01-02 11:51:14.360 DBG default: Exec #80: hwclock --hctosys
+2026-01-02 14:51:14.000 DBG default: Exit #80: 0
+2026-01-02 14:51:14.001 DBG default: Exec #81: cp -f /etc/adjtime /mnt/antiX/etc/
+2026-01-02 14:51:14.010 DBG default: Exit #81: 0
+2026-01-02 14:51:14.010 DBG default: Exec #82: cp -f /etc/default/rcS /mnt/antiX/etc/default
+2026-01-02 14:51:14.020 DBG default: SErr #82: "/usr/bin/cp: cannot stat '/etc/default/rcS': No such file or directory\n"
+2026-01-02 14:51:14.020 DBG default: Exit #82: 1
+2026-01-02 14:51:14.020 DBG default: Bash #83: sed -i '/data0=/c\data0=%H:%M' /home/demo/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc
+2026-01-02 14:51:14.032 DBG default: SErr #83: "sed: can't read /home/demo/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc: No such file or directory\n"
+2026-01-02 14:51:14.032 DBG default: Exit #83: 2
+2026-01-02 14:51:14.032 DBG default: Bash #84: sed -i '/data0=/c\data0=%H:%M' /mnt/antiX/etc/skel/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc
+2026-01-02 14:51:14.044 DBG default: SErr #84: "sed: can't read /mnt/antiX/etc/skel/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc: No such file or directory\n"
+2026-01-02 14:51:14.045 DBG default: Exit #84: 2
+2026-01-02 14:51:14.045 DBG default: Bash #85: sed -i '/time_format=/c\time_format=%H:%M' /home/demo/.config/xfce4/panel/datetime-1.rc
+2026-01-02 14:51:14.057 DBG default: SErr #85: "sed: can't read /home/demo/.config/xfce4/panel/datetime-1.rc: No such file or directory\n"
+2026-01-02 14:51:14.057 DBG default: Exit #85: 2
+2026-01-02 14:51:14.057 DBG default: Bash #86: sed -i '/time_format=/c\time_format=%H:%M' /mnt/antiX/etc/skel/.config/xfce4/panel/datetime-1.rc
+2026-01-02 14:51:14.069 DBG default: SErr #86: "sed: can't read /mnt/antiX/etc/skel/.config/xfce4/panel/datetime-1.rc: No such file or directory\n"
+2026-01-02 14:51:14.069 DBG default: Exit #86: 2
+2026-01-02 14:51:14.069 DBG default: Bash #87: sed -i 's/%l/%H/' /home/demo/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+2026-01-02 14:51:14.081 DBG default: SErr #87: "sed: can't read /home/demo/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml: No such file or directory\n"
+2026-01-02 14:51:14.081 DBG default: Exit #87: 2
+2026-01-02 14:51:14.081 DBG default: Bash #88: sed -i 's/%l/%H/' /mnt/antiX/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+2026-01-02 14:51:14.093 DBG default: SErr #88: "sed: can't read /mnt/antiX/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml: No such file or directory\n"
+2026-01-02 14:51:14.093 DBG default: Exit #88: 2
+2026-01-02 14:51:14.094 DBG default: Bash #89: sed -i '/use24hFormat=/c\use24hFormat=2' /home/demo/.config/plasma-org.kde.plasma.desktop-appletsrc
+2026-01-02 14:51:14.105 DBG default: SErr #89: "sed: can't read /home/demo/.config/plasma-org.kde.plasma.desktop-appletsrc: No such file or directory\n"
+2026-01-02 14:51:14.106 DBG default: Exit #89: 2
+2026-01-02 14:51:14.106 DBG default: Bash #90: sed -i '/use24hFormat=/c\use24hFormat=2' /mnt/antiX/etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc
+2026-01-02 14:51:14.118 DBG default: SErr #90: "sed: can't read /mnt/antiX/etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc: No such file or directory\n"
+2026-01-02 14:51:14.118 DBG default: Exit #90: 2
+2026-01-02 14:51:14.118 DBG default: Bash #91: sed -i '/time1_format/c\time1_format=%H:%M' /mnt/antiX/etc/skel/.config/tint2/tint2rc
+2026-01-02 14:51:14.130 DBG default: SErr #91: "sed: can't read /mnt/antiX/etc/skel/.config/tint2/tint2rc: No such file or directory\n"
+2026-01-02 14:51:14.130 DBG default: Exit #91: 2
+2026-01-02 14:51:14.130 DBG default: Bash #92: sed -i '/time1_format/c\time1_format=%H:%M' /home/demo/.config/tint2/tint2rc
+2026-01-02 14:51:14.142 DBG default: SErr #92: "sed: can't read /home/demo/.config/tint2/tint2rc: No such file or directory\n"
+2026-01-02 14:51:14.143 DBG default: Exit #92: 2
+2026-01-02 14:51:14.143 DBG default: Bash #93: sed -i 's/%H:%M/%H:%M/g' /mnt/antiX/etc/skel/.icewm/preferences
+2026-01-02 14:51:14.168 DBG default: Exit #93: 0
+2026-01-02 14:51:14.168 DBG default: Bash #94: sed -i 's/%k:%M/%k:%M/g' /mnt/antiX/etc/skel/.fluxbox/init
+2026-01-02 14:51:14.181 DBG default: Exit #94: 0
+2026-01-02 14:51:14.181 DBG default: Bash #95: sed -i 's/%H:%M/%k:%M/g' /mnt/antiX/etc/skel/.jwm/tray
+2026-01-02 14:51:14.194 DBG default: Exit #95: 0
+2026-01-02 14:51:14.194 DBG default: Localize repo
+2026-01-02 14:51:14.195 DBG default: Exec #96: chroot /mnt/antiX localize-repo default
+2026-01-02 14:51:14.477 DBG default: Exit #96: 0
+2026-01-02 14:51:14.477 DBG default: Change root: /mnt/antiX
+2026-01-02 14:51:14.477 DBG default: Exec #97: chpasswd
+2026-01-02 14:51:14.845 DBG default: Exit #97: 0
+2026-01-02 14:51:14.846 DBG default: Change root: 
+2026-01-02 14:51:14.846 DBG default: check for remastered home demo folder: false
+2026-01-02 14:51:14.846 DBG default: Exec #98: cp -a /mnt/antiX/etc/skel /mnt/antiX/home/cabana
+2026-01-02 14:51:15.060 DBG default: Exit #98: 0
+2026-01-02 14:51:15.060 DBG default: Exec #99: chown -R demo:demo /mnt/antiX/home/cabana
+2026-01-02 14:51:15.079 DBG default: Exit #99: 0
+2026-01-02 14:51:15.088 DBG default: Exec #100: sed -i s/demo/cabana/g /mnt/antiX/etc/group
+2026-01-02 14:51:15.097 DBG default: Exit #100: 0
+2026-01-02 14:51:15.097 DBG default: Exec #101: sed -i s/demo/cabana/g /mnt/antiX/etc/gshadow
+2026-01-02 14:51:15.118 DBG default: Exit #101: 0
+2026-01-02 14:51:15.118 DBG default: Exec #102: sed -i s/demo/cabana/g /mnt/antiX/etc/passwd
+2026-01-02 14:51:15.127 DBG default: Exit #102: 0
+2026-01-02 14:51:15.128 DBG default: Exec #103: sed -i s/demo/cabana/g /mnt/antiX/etc/shadow
+2026-01-02 14:51:15.137 DBG default: Exit #103: 0
+2026-01-02 14:51:15.137 DBG default: Exec #104: sed -i s/demo/cabana/g /mnt/antiX/etc/subuid
+2026-01-02 14:51:15.156 DBG default: Exit #104: 0
+2026-01-02 14:51:15.156 DBG default: Exec #105: sed -i s/demo/cabana/g /mnt/antiX/etc/subgid
+2026-01-02 14:51:15.166 DBG default: Exit #105: 0
+2026-01-02 14:51:15.167 DBG default: Exec #106: sed -i s/demo/cabana/g /mnt/antiX/etc/slim.conf
+2026-01-02 14:51:15.175 DBG default: SErr #106: "/usr/bin/sed: can't read /mnt/antiX/etc/slim.conf: No such file or directory\n"
+2026-01-02 14:51:15.176 DBG default: Exit #106: 2
+2026-01-02 14:51:15.176 DBG default: Exec #107: sed -i s/demo/cabana/g /mnt/antiX/etc/slimski.local.conf
+2026-01-02 14:51:15.185 DBG default: Exit #107: 0
+2026-01-02 14:51:15.186 DBG default: Exec #108: sed -i s/demo/cabana/g /mnt/antiX/etc/lightdm/lightdm.conf
+2026-01-02 14:51:15.194 DBG default: SErr #108: "/usr/bin/sed: can't read /mnt/antiX/etc/lightdm/lightdm.conf: No such file or directory\n"
+2026-01-02 14:51:15.195 DBG default: Exit #108: 2
+2026-01-02 14:51:15.195 DBG default: Exec #109: sed -i s/demo/cabana/g /mnt/antiX/home/*/.gtkrc-2.0
+2026-01-02 14:51:15.203 DBG default: SErr #109: "/usr/bin/sed: can't read /mnt/antiX/home/*/.gtkrc-2.0: No such file or directory\n"
+2026-01-02 14:51:15.204 DBG default: Exit #109: 2
+2026-01-02 14:51:15.204 DBG default: Exec #110: sed -i s/demo/cabana/g /mnt/antiX/root/.gtkrc-2.0
+2026-01-02 14:51:15.223 DBG default: Exit #110: 0
+2026-01-02 14:51:15.223 DBG default: Exec #111: sed -i s/#auto_login/auto_login/g /mnt/antiX/etc/slim.conf
+2026-01-02 14:51:15.232 DBG default: SErr #111: "/usr/bin/sed: can't read /mnt/antiX/etc/slim.conf: No such file or directory\n"
+2026-01-02 14:51:15.232 DBG default: Exit #111: 2
+2026-01-02 14:51:15.232 DBG default: Exec #112: sed -i "s/#default_user /default_user /g" /mnt/antiX/etc/slim.conf
+2026-01-02 14:51:15.241 DBG default: SErr #112: "/usr/bin/sed: can't read /mnt/antiX/etc/slim.conf: No such file or directory\n"
+2026-01-02 14:51:15.241 DBG default: Exit #112: 2
+2026-01-02 14:51:15.242 DBG default: Exec #113: sed -i s/#autologin_enabled/autologin_enabled/g /mnt/antiX/etc/slimski.local.conf
+2026-01-02 14:51:15.251 DBG default: Exit #113: 0
+2026-01-02 14:51:15.251 DBG default: Exec #114: sed -i "s/#default_user /default_user /g" /mnt/antiX/etc/slimski.local.conf
+2026-01-02 14:51:15.261 DBG default: Exit #114: 0
+2026-01-02 14:51:15.261 DBG default: Exec #115: sed -i s/User=/User=cabana/g /mnt/antiX/etc/sddm.conf
+2026-01-02 14:51:15.270 DBG default: SErr #115: "/usr/bin/sed: can't read /mnt/antiX/etc/sddm.conf: No such file or directory\n"
+2026-01-02 14:51:15.270 DBG default: Exit #115: 2
+2026-01-02 14:51:15.270 DBG default: Exec #116: touch /mnt/antiX/var/mail/cabana
+2026-01-02 14:51:15.279 DBG default: Exit #116: 0
+2026-01-02 14:51:15.336 DBG default: Configuration: /mnt/antiX/etc/minstall.conf
+2026-01-02 14:51:15.336 DBG default:  - Product: antiX Linux 23.2
+2026-01-02 14:51:15.336 DBG default:  - Version: 5.2
+2026-01-02 14:51:15.337 DBG default:  = GRUB:
+2026-01-02 14:51:15.337 DBG default:    - Install: true
+2026-01-02 14:51:15.337 DBG default:    - Location: sda
+2026-01-02 14:51:15.337 DBG default:    - TargetType: MBR
+2026-01-02 14:51:15.337 DBG default:  = Localization:
+2026-01-02 14:51:15.337 DBG default:    - ClockHours: 24
+2026-01-02 14:51:15.337 DBG default:    - LocalClock: true
+2026-01-02 14:51:15.338 DBG default:    - Locale: pt_BR.UTF-8
+2026-01-02 14:51:15.338 DBG default:    - Timezone: America/Bahia
+2026-01-02 14:51:15.338 DBG default:  = Network:
+2026-01-02 14:51:15.338 DBG default:    - ComputerName: vostro-a180
+2026-01-02 14:51:15.338 DBG default:    - Domain: dell.local
+2026-01-02 14:51:15.338 DBG default:    - Samba: false
+2026-01-02 14:51:15.338 DBG default:    - Workgroup: 
+2026-01-02 14:51:15.338 DBG default:  = Storage:
+2026-01-02 14:51:15.338 DBG default:    - Target: Partitions
+2026-01-02 14:51:15.338 DBG default:  = Storage.sda.Partition1:
+2026-01-02 14:51:15.338 DBG default:    - CheckBadBlocks: false
+2026-01-02 14:51:15.338 DBG default:    - Dump: false
+2026-01-02 14:51:15.339 DBG default:    - Encrypt: false
+2026-01-02 14:51:15.339 DBG default:    - Pass: 0
+2026-01-02 14:51:15.339 DBG default:    - Size: 161061273600
+2026-01-02 14:51:15.339 DBG default:  = Storage.sda.Partition2:
+2026-01-02 14:51:15.339 DBG default:    - Active: true
+2026-01-02 14:51:15.339 DBG default:    - CheckBadBlocks: true
+2026-01-02 14:51:15.339 DBG default:    - Dump: true
+2026-01-02 14:51:15.339 DBG default:    - Encrypt: false
+2026-01-02 14:51:15.339 DBG default:    - Format: ext4
+2026-01-02 14:51:15.339 DBG default:    - Label: boot
+2026-01-02 14:51:15.340 DBG default:    - Options: noatime
+2026-01-02 14:51:15.340 DBG default:    - Pass: 1
+2026-01-02 14:51:15.340 DBG default:    - Size: 524288000
+2026-01-02 14:51:15.340 DBG default:    - UseFor: /boot
+2026-01-02 14:51:15.340 DBG default:  = Storage.sda.Partition3:
+2026-01-02 14:51:15.340 DBG default:    - CheckBadBlocks: false
+2026-01-02 14:51:15.340 DBG default:    - Dump: false
+2026-01-02 14:51:15.340 DBG default:    - Encrypt: false
+2026-01-02 14:51:15.340 DBG default:    - Format: SWAP
+2026-01-02 14:51:15.340 DBG default:    - Label: swapantiX
+2026-01-02 14:51:15.340 DBG default:    - Options: defaults
+2026-01-02 14:51:15.341 DBG default:    - Pass: 2
+2026-01-02 14:51:15.341 DBG default:    - Size: 1608515584
+2026-01-02 14:51:15.341 DBG default:    - UseFor: SWAP
+2026-01-02 14:51:15.341 DBG default:  = Storage.sda.Partition4:
+2026-01-02 14:51:15.341 DBG default:    - CheckBadBlocks: false
+2026-01-02 14:51:15.341 DBG default:    - Dump: true
+2026-01-02 14:51:15.341 DBG default:    - Encrypt: false
+2026-01-02 14:51:15.341 DBG default:    - Format: ext4
+2026-01-02 14:51:15.341 DBG default:    - Label: rootantiX23.2
+2026-01-02 14:51:15.341 DBG default:    - Options: noatime
+2026-01-02 14:51:15.341 DBG default:    - Pass: 1
+2026-01-02 14:51:15.342 DBG default:    - Size: 32212254720
+2026-01-02 14:51:15.342 DBG default:    - UseFor: /
+2026-01-02 14:51:15.342 DBG default:  = Storage.sda.Partition5:
+2026-01-02 14:51:15.342 DBG default:    - CheckBadBlocks: false
+2026-01-02 14:51:15.342 DBG default:    - Dump: true
+2026-01-02 14:51:15.342 DBG default:    - Encrypt: false
+2026-01-02 14:51:15.342 DBG default:    - Format: PRESERVE
+2026-01-02 14:51:15.342 DBG default:    - Label: homeantiX
+2026-01-02 14:51:15.342 DBG default:    - Options: noatime
+2026-01-02 14:51:15.342 DBG default:    - Pass: 2
+2026-01-02 14:51:15.342 DBG default:    - Size: 304698359808
+2026-01-02 14:51:15.343 DBG default:    - UseFor: /home
+2026-01-02 14:51:15.343 DBG default:  = Storage.sdb.Partition1:
+2026-01-02 14:51:15.343 DBG default:    - Active: true
+2026-01-02 14:51:15.343 DBG default:    - CheckBadBlocks: false
+2026-01-02 14:51:15.343 DBG default:    - Dump: false
+2026-01-02 14:51:15.343 DBG default:    - Encrypt: false
+2026-01-02 14:51:15.343 DBG default:    - Pass: 0
+2026-01-02 14:51:15.343 DBG default:    - Size: 1957691392
+2026-01-02 14:51:15.343 DBG default:  = Storage.sdb.Partition2:
+2026-01-02 14:51:15.343 DBG default:    - CheckBadBlocks: false
+2026-01-02 14:51:15.343 DBG default:    - Dump: false
+2026-01-02 14:51:15.344 DBG default:    - ESP: true
+2026-01-02 14:51:15.344 DBG default:    - Encrypt: false
+2026-01-02 14:51:15.344 DBG default:    - Pass: 0
+2026-01-02 14:51:15.344 DBG default:    - Size: 9181184
+2026-01-02 14:51:15.344 DBG default:  = Swap:
+2026-01-02 14:51:15.344 DBG default:    - File: /swap/swap
+2026-01-02 14:51:15.344 DBG default:    - Hibernation: true
+2026-01-02 14:51:15.344 DBG default:    - Install: true
+2026-01-02 14:51:15.344 DBG default:    - Size: 5268
+2026-01-02 14:51:15.344 DBG default:  = User:
+2026-01-02 14:51:15.345 DBG default:    - Autologin: true
+2026-01-02 14:51:15.345 DBG default:    - EnableRoot: true
+2026-01-02 14:51:15.345 DBG default:    - SaveDesktop: false
+2026-01-02 14:51:15.345 DBG default:    - Username: cabana
+2026-01-02 14:51:15.345 DBG default: End of configuration.
+2026-01-02 14:51:15.353 DBG default: Exec #117: sync
+2026-01-02 14:51:15.610 DBG default: Exit #117: 0
+2026-01-02 14:51:15.610 DBG default: << void SwapMan::install(QStringList&) >>
+2026-01-02 14:51:15.613 DBG default: ++ Criando o arquivo de trocas ++
+2026-01-02 14:51:15.616 DBG default: MkPath(SUCCESS): "/mnt/antiX/swap"
+2026-01-02 14:51:15.616 DBG default: Exec #118: fallocate -l 5268M /mnt/antiX/swap/swap
+2026-01-02 14:51:15.763 DBG default: Exit #118: 0
+2026-01-02 14:51:15.763 DBG default: Exec #119: mkswap -q /mnt/antiX/swap/swap
+2026-01-02 14:51:15.812 DBG default: Exit #119: 0
+2026-01-02 14:51:15.812 DBG default: ++ Configurando o arquivo de trocas ++
+2026-01-02 14:51:15.815 DBG default: Bash #120: blkid -s UUID -o value $(df -P /mnt/antiX/swap/swap | awk 'END{print $1}')
+2026-01-02 14:51:15.837 DBG default: Exit #120: 0
+2026-01-02 14:51:15.837 DBG default: Bash #121: filefrag -v /mnt/antiX/swap/swap | awk 'NR==4 {print $4}' | tr -d .
+2026-01-02 14:51:15.855 DBG default: Exit #121: 0
+2026-01-02 14:51:15.856 DBG default: << void BootMan::install(const QStringList&) >>
+2026-01-02 14:51:15.861 DBG default: Bash #122: ls /mnt/antiX/boot | grep 'initrd.img-3.6'
+2026-01-02 14:51:15.874 DBG default: Exit #122: 1
+2026-01-02 14:51:15.874 DBG default: ++ Instalando o GRUB ++
+2026-01-02 14:51:15.877 DBG default: Exec #123: grub-install --target=i386-pc --recheck --no-floppy --force --boot-directory=/mnt/antiX/boot /dev/sda
+2026-01-02 14:51:27.316 DBG default: SErr #123: "Installing for i386-pc platform.\nInstallation finished. No error reported.\n"
+2026-01-02 14:51:27.316 DBG default: Exit #123: 0
+2026-01-02 14:51:27.317 DBG default: grubDefault is  "quiet selinux=0"
+2026-01-02 14:51:27.317 DBG default: Bash #124: /live/bin/non-live-cmdline
+2026-01-02 14:51:27.342 DBG default: Exit #124: 0
+2026-01-02 14:51:27.342 DBG default: intermediate ("vga=791", "quiet", "quiet", "selinux=0", "resume=UUID=daa7ff2b-0269-4578-89ab-465067c4fa17", "resume_offset=806912")
+2026-01-02 14:51:27.342 DBG default: Bash #125: grep ^CONFIG_CMDLINE= /boot/config-$(uname -r) | cut -d '"' -f2
+2026-01-02 14:51:27.353 DBG default: Exit #125: 0
+2026-01-02 14:51:27.360 DBG default: Add cmdline options to Grub ("vga=791", "quiet", "selinux=0", "resume=UUID=daa7ff2b-0269-4578-89ab-465067c4fa17", "resume_offset=806912")
+2026-01-02 14:51:27.360 DBG default: cmdlinestring "vga=791 quiet selinux=0 resume=UUID=daa7ff2b-0269-4578-89ab-465067c4fa17 resume_offset=806912"
+2026-01-02 14:51:27.360 DBG default: Bash #126: sed -i -r 's|^(GRUB_CMDLINE_LINUX_DEFAULT=).*|\1"vga=791 quiet selinux=0 resume=UUID=daa7ff2b-0269-4578-89ab-465067c4fa17 resume_offset=806912"|' /mnt/antiX/etc/default/grub
+2026-01-02 14:51:27.638 DBG default: Exit #126: 0
+2026-01-02 14:51:27.644 DBG default: Change root: /mnt/antiX
+2026-01-02 14:51:27.644 DBG default: Exec #127: update-grub
+2026-01-02 14:51:44.989 DBG default: SErr #127: "Generating grub configuration file ...\nFound background: /usr/share/wallpaper/grub/back.png\nFound background image: /usr/share/wallpaper/grub/back.png\nFound linux image: /boot/vmlinuz-6.1.105-antix.1-amd64-smp\nFound initrd image: /boot/initrd.img-6.1.105-antix.1-amd64-smp\nFound linux image: /boot/vmlinuz-5.10.224-antix.1-amd64-smp\nFound initrd image: /boot/initrd.img-5.10.224-antix.1-amd64-smp\nWarning: os-prober will be executed to detect other bootable partitions.\nIts output will be used to detect bootable binaries on them and create new boot entries.\ngrub-probe: error: cannot find a GRUB drive for /dev/sdb1.  Check your device.map.\ndone\n"
+2026-01-02 14:51:44.989 DBG default: Exit #127: 0
+2026-01-02 14:51:44.989 DBG default: Exec #128: udevadm info /dev/sda
+2026-01-02 14:51:45.002 DBG default: Exit #128: 0
+2026-01-02 14:51:45.002 DBG default: Exec #129: debconf-set-selections
+2026-01-02 14:51:46.021 DBG default: Exit #129: 0
+2026-01-02 14:51:46.021 DBG default: ++ Atualizando o initramfs ++
+2026-01-02 14:51:46.027 DBG default: Exec #130: update-initramfs -u -t -k all
+2026-01-02 14:53:34.723 DBG default: SOut #130: "update-initramfs: Generating /boot/initrd.img-6.1.105-antix.1-amd64-smp\nupdate-initramfs: Generating /boot/initrd.img-5.10.224-antix.1-amd64-smp\n"
+2026-01-02 14:53:34.724 DBG default: Exit #130: 0
+2026-01-02 14:53:34.729 DBG default: Revert root: 
+2026-01-02 14:53:34.734 DBG default: ++ Limpando ++
+2026-01-02 14:53:34.737 DBG default: << void MInstall::cleanup() >>
+2026-01-02 14:53:34.815 DBG default: Exec #131: rm -rf /mnt/antiX/mnt/antiX
+2026-01-02 14:53:34.863 DBG default: Exit #131: 0
+2026-01-02 14:53:34.863 DBG default: Exec #132: swapon --show=NAME --noheadings
+2026-01-02 14:53:34.891 DBG default: Exit #132: 0
+2026-01-02 14:53:34.891 DBG default: Exec #133: umount -qR /mnt/antiX
+2026-01-02 14:53:36.007 DBG default: Exit #133: 0
+2026-01-02 14:53:36.007 DBG default: << void MInstall::setupAutoMount(bool) >>
+2026-01-02 14:53:36.008 DBG default: Bash #134: ps -e | grep 'udisksd'
+2026-01-02 14:53:36.032 DBG default: SOut #134: "  23493 ?        00:00:06 udisksd\n"
+2026-01-02 14:53:36.032 DBG default: Exit #134: 0
+2026-01-02 14:53:36.033 DBG default: Bash #135: grep -El '^[^#].*mdadm (-I|--incremental)' /lib/udev/rules.d/*
+2026-01-02 14:53:36.058 DBG default: Exit #135: 0
+2026-01-02 14:53:36.058 DBG default: Exec #136: rm -f /run/udev/rules.d/91-mx-udisks-inhibit.rules
+2026-01-02 14:53:36.067 DBG default: Exit #136: 0
+2026-01-02 14:53:36.067 DBG default: Exec #137: udevadm control --reload
+2026-01-02 14:53:36.080 DBG default: Exit #137: 0
+2026-01-02 14:53:36.080 DBG default: Exec #138: service udev stop
+2026-01-02 14:53:36.100 DBG default: SErr #138: "udev: unrecognized service\n"
+2026-01-02 14:53:36.100 DBG default: Exit #138: 1
+2026-01-02 14:53:36.100 DBG default: Exec #139: service udev start
+2026-01-02 14:53:36.113 DBG default: SErr #139: "udev: unrecognized service\n"
+2026-01-02 14:53:36.114 DBG default: Exit #139: 1
+2026-01-02 14:53:36.114 DBG default: Bash #140: rm -f /run/udev/rules.d/64-md-raid-assembly.rules
+2026-01-02 14:53:36.125 DBG default: Exit #140: 0
+2026-01-02 14:53:36.125 DBG default: ++ Finalizado ++
